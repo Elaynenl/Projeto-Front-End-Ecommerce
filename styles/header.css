@@ -1,0 +1,107 @@
+.cabecalho {
+    display: flex;
+    background-color: var(--cor-cabecalho);
+    text-align: center;    
+    max-width:100vh;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 0.8em solid var(--cor-cabecalho); */
+    padding: 0.8em 0.8em 0.8em 0;
+    height: 25px;
+    
+    
+}
+
+.container {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 42px;
+    height: 42px;
+    background-image: url("../img/Menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__pesquisa {
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.3em;
+    
+}
+
+.container__titulo {
+    background-color: var(--cor-cabecalho);
+    font-size: 20px;
+    font-family: var(--fonte);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.container__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container__link__imagem {
+    width: 35px;
+    height: 35px;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-cabecalho);
+    padding: 10px 0;
+    /* z-index: 999; */
+    text-align: left; /* Alinha os itens da lista à esquerda */
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lista-menu, .lista-menu__link {
+    font-family: var(--fonte-lista-menu);
+}
+
+.lista-menu__link {
+    text-align: center;
+    /* padding-left: 1em; */
+}
+
+.lista-menu__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista-menu__subtitulo, .lista-menu__cadastro {
+    text-align: center;
+   
+}
+
+.lista-menu__imagem {
+    width: 26px;
+    height: 26px;
+}

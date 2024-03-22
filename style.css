@@ -1,0 +1,16 @@
+@import url(styles/header.css);
+@import url(reset.css);
+
+
+
+:root {
+    --cor-de-fundo: #FFCFD9;
+    --cor-cabecalho: #fa8072;
+    --fonte-cabecalho: "labrada";
+    --branco: #FFFFFF;
+    --fonte-lista-menu: Mulish;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
