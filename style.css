@@ -5,10 +5,16 @@
 
 :root {
     --cor-de-fundo: #FFCFD9;
-    --cor-cabecalho: #fa8072;
+    --cor-cabecalho: #c26a61;
+    /* --cor-cabecalho-projeto-inicial: #fa8072; */
+    --preto: #000000;
+    --pastel-gradiente: 5F0E0E;
+    --cor-botao: #792926;
+    --branco: #FFFFFF;
     --fonte-cabecalho: "labrada";
     --branco: #FFFFFF;
     --fonte-lista-menu: Mulish;
+    
 }
 
 body {
