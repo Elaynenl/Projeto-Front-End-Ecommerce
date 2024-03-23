@@ -64,9 +64,10 @@
     top: 100%;
     left: 0;
     width: 100%;
+    height: 100vh;
     background-color: var(--cor-cabecalho);
     padding: 10px 0;
-    /* z-index: 999; */
+    z-index: 99999;
     text-align: left; /* Alinha os itens da lista à esquerda */
 }
 
@@ -86,6 +87,7 @@
 
 .lista-menu__link {
     text-align: center;
+    font-size: 14px;
     /* padding-left: 1em; */
 }
 
@@ -102,6 +104,6 @@
 }
 
 .lista-menu__imagem {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
 }
