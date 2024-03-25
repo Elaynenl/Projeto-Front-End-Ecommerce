@@ -7,8 +7,6 @@
     align-items: center;
     padding: 0.8em 0.8em 0.8em 0;
     height: 25px;
-    
-    
 }
 
 .container {
@@ -42,8 +40,7 @@
     background: url(../img/lupa.png) no-repeat right;
     border: var(--branco);
     position: relative;
-     color: transparent; /*Para deixar o texto transparente ao ficar fora do :focus sem usar javascript */
-        
+     color: transparent;         
 }
 
 .container__pesquisa::placeholder {
@@ -100,7 +97,6 @@
     padding: 10px 0;
     text-align: left; 
     cursor: pointer;
-    
 }
 
 .container__botao:checked~.lista-menu {

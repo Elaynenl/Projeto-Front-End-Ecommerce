@@ -1,5 +1,6 @@
 @import url(styles/header.css);
 @import url(reset.css);
+@import url(styles/card.css);
 
 
 
@@ -13,7 +14,9 @@
     --branco: #FFFFFF;
     --fonte-cabecalho: "labrada";
     --branco: #FFFFFF;
+    --tom-vermelho: #8B0000;
     --fonte-lista-menu: Mulish;
+    --fonte-card: Cabin-condensed;
     
 }
 

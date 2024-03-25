@@ -1,0 +1,48 @@
+.card__entrega {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em 0;
+    border: 1px solid var(--cor-cabecalho);
+    border-radius: 0.2em;
+    margin: 0.4em 0.2em 0 0.2em;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 98%;
+    height: auto;
+    font-family: var(--fonte-card); 
+}
+
+.card__entrega__imagem{
+    width: 35px;
+    height: 35px;
+}
+
+
+.card__entrega__titulo {
+    font-family: var(--fonte-card);
+    font-size: 14px;
+    font-weight: 900;
+    padding: 0 2em 0 2em;   
+}
+
+.negrito {
+    font-weight: bold;
+    color: var(--tom-vermelho);
+    -webkit-text-stroke: 0.5px var(--preto)
+}
+
+
+.card__texto__subtitulo {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--tom-vermelho);
+    margin: 0.2em 0;
+}
+
+.card__texto__paragrafo {
+    font-size: 10px;
+    font-weight: 200;
+}
+
