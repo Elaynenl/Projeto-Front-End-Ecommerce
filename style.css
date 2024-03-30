@@ -1,7 +1,7 @@
-@import url(styles/header.css);
 @import url(reset.css);
+@import url(styles/header.css);
 @import url(styles/card.css);
-
+@import url(styles/banner.css);
 
 
 :root {
@@ -9,14 +9,15 @@
     --cor-cabecalho: #c26a61;
     /* --cor-cabecalho-projeto-inicial: #fa8072; */
     --preto: #000000;
-    --pastel-gradiente: 5F0E0E;
+    --pastel-gradiente: #5F0E0E;
     --cor-botao: #792926;
     --branco: #FFFFFF;
     --fonte-cabecalho: "labrada";
     --branco: #FFFFFF;
     --tom-vermelho: #8B0000;
-    --fonte-lista-menu: Mulish;
-    --fonte-card: Cabin-condensed;
+    --cinza: #858585;
+    --fonte-lista-menu: 'Mulish';
+    --fonte-card: 'Cabin-condensed';
     
 }
 

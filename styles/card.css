@@ -21,9 +21,9 @@
 
 .card__entrega__titulo {
     font-family: var(--fonte-card);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 900;
-    padding: 0 2em 0 2em;   
+    
 }
 
 .negrito {
@@ -32,17 +32,21 @@
     -webkit-text-stroke: 0.5px var(--preto)
 }
 
+.card__texto {
+    margin: 0 1em;
+}
+
 
 .card__texto__subtitulo {
     display: block;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
     color: var(--tom-vermelho);
     margin: 0.2em 0;
 }
 
 .card__texto__paragrafo {
-    font-size: 10px;
-    font-weight: 200;
+    font-size: 8px;
+    font-weight: 400;
 }
 
