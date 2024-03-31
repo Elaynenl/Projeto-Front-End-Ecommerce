@@ -7,10 +7,9 @@
     <link rel="stylesheet" href=link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
     <link rel="stylesheet" href="style.css">
 
 
@@ -76,8 +75,79 @@
         <h1 class="banner__titulo">Prepare-se para uma revolução na sua rotina de beleza!</h1>
         <p class="banner__texto__top">LANÇAMENTO</p>
         <img src="img/linha completa.png.avif" alt="foto da linha completa de lançamento" class="banner__imagem">
-        <p class="banner__texto"><span>IMPERDÍVEL!!!</span> DESCUBRA A BELEZA PELA METADE DO PREÇO: <span>50% DE DESCONTO</span> NA NOVA LINHA DE LANÇAMENTO "AME-SE!</p>
+        <p class="banner__texto"><span class="texto__destaque">IMPERDÍVEL!!!</span> <br> DESCUBRA A BELEZA PELA METADE DO PREÇO: <span class="texto__destaque">50% DE DESCONTO</span> NA NOVA LINHA DE LANÇAMENTO "AME-SE!" <a href="">Clique aqui</a></p>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">MAIS LANÇAMENTOS</h2>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper-container">
+                        <img src="img/locao_corporal.jpg" alt="embalagem loção hidratante">
+                        <h2 class="swiper-titulo">LOÇÃO CORPORAL SUAVIDADE CELESTIAL</h2>
+                        <p class="swiper-texto">Enriquecida com uma mistura de ingredientes naturais, esta loção luxuosa proporciona hidratação profunda e duradoura, deixando sua pele incrivelmente suave e radiante.</p>
+                        <a href="#" class="swiper__link">Comprar agora</a>
+                    </div>
+                </div>
+
+
+            <div class="swiper-slide">
+                <div class="swiper-container">
+                    <img src="img/perfumeBelaFlore.png" alt="frasco do perfume Bela Flore">
+                    <h2 class="swiper-titulo">PERFUME BELA FLORE</h2>
+                    <p class="swiper-texto">Este perfume deslumbra com uma mistura única de notas florais e frutadas que evocam uma sensação de frescor e feminilidade radiante.</p>
+                    <a href="#" class="swiper__link">Comprar agora</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-container">
+                    <img src="img/skincare.png" alt="imagem do kit de skincare">
+                    <h2 class="swiper-titulo">KIT SKINCARE RADIÂNCIA NATURAL</h2>
+                    <p class="swiper-texto">Criada com ingredientes botânicos cuidadosamente selecionados, nossa linha de skincare oferece uma abordagem suave e eficaz para nutrir e revitalizar sua pele.</p>
+                    <a href="#" class="swiper__link">Comprar agora</a>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="swiper-container">
+                    <img src="img/perfume-masculino.png" alt="frasco do perfume Bela Flore">
+                    <h2 class="swiper-titulo">PERFUME MAR AZUL</h2>
+                    <p class="swiper-texto">Este perfume deslumbra com uma mistura única de notas florais e frutadas que evocam uma sensação de frescor e feminilidade radiante.</p>
+                    <a href="#" class="swiper__link">Comprar agora</a>
+                </div>
+            </div>
+
+            </div>
+                    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            });
+    </script>
 
 </body>
 </html>

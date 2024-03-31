@@ -58,7 +58,7 @@
 
 .container__pesquisa:focus {
     width: 380px;
-    max-width: 80vh;
+    max-width: 98vw;
     margin-left: 0.3em;
     border-bottom: solid 1px var(--cor-cabecalho);
     background-color: var(--cor-de-fundo);
