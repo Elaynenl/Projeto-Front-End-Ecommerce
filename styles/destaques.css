@@ -1,0 +1,79 @@
+.destaques {
+    text-align: center;
+    font-family: var(--fonte-lista-menu);
+}
+
+.destaques__titulo {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--marron);
+    background: var(--cor-destaque);
+    
+}
+
+.container__destaques__maquiagem {
+    background-color: var(--branco);
+    border: 1px dashed var(--cor-cabecalho);
+    border-radius: 0.5em;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    margin: 1em 0.5em;
+}
+
+.container__destaques__titulo {
+    display: inline-block;
+    color: var(--marron);
+    font-size: 16px;
+    font-weight: 800;
+    background-color: var(--cor-destaque);
+    margin: 0.5em;
+}
+
+.container__destaque__imagem {
+    width: 150px;
+    height: 150px;
+}
+
+.container__destaque {
+    align-items: start;
+}
+
+
+.informacoes {
+    text-align: left;
+    margin-left: 0.4em;  
+}
+
+.titulo__produto {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--preto);
+    margin-top: 0.5em;
+}
+
+.valor {
+    margin-top: 0.3em;
+}
+
+.valor__atual {
+    color: var(--preto);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.valor, .valor__desconto {
+    color: var(--vermelho-claro);
+    font-weight: 600;
+}
+
+.desconto {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5em 1.2em 0.5em 0 ;
+}
+
+.valor__desconto {
+    margin-left: 0.4em;
+}

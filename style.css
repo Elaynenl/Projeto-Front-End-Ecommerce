@@ -3,6 +3,7 @@
 @import url(styles/card.css);
 @import url(styles/banner.css);
 @import url(styles/carrossel.css);
+@import url(styles/destaques.css);
 
 
 :root {
@@ -19,6 +20,7 @@
     --vermelho-claro: #ff0000;
     --cinza: #858585;
     --marron: #381614;
+    --cor-destaque: #d8d9f1;
     --fonte-lista-menu: 'Mulish';
     --fonte-card: 'Cabin-condensed';
     
@@ -26,4 +28,8 @@
 
 body {
     background-color: var(--cor-de-fundo);
+}
+
+hr {
+    margin: 0.8em 0.2em;
 }
