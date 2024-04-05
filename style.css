@@ -34,4 +34,7 @@ body {
 
 hr {
     margin: 0 0.2em;
+    border: 0;
+    height: 1px;
+    background: var(--cor-destaque);
 }

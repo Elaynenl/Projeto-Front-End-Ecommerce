@@ -1,0 +1,24 @@
+.rodape {
+    background-color: var(--cor-cabecalho);
+    padding: 1em 1em 0 1em;
+    font-family: var(--fonte-lista-menu);
+    text-align: center;
+    margin-bottom: none;
+}
+
+.rodape__titulo {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0.7em 0;
+}
+
+.rodape__texto {
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.5em 0;
+}
+
+.rodape-texto__direitos__autorais {
+    align-items: baseline;
+}

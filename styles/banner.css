@@ -8,7 +8,7 @@
 .banner__titulo {
     font-family: var(--fonte-lista-menu);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 0.5em;
 }
 
@@ -22,7 +22,7 @@
 .banner__texto {
     font-family: var(--fonte-lista-menu);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--preto);
     margin: 0.5em;
 }
