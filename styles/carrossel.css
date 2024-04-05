@@ -67,3 +67,11 @@
     position: initial;
     margin: 0.5em 0;
 }
+
+.swiper-pagination-bullet {
+    background-color: var(--cor-cabecalho);
+}
+
+.divisao__carrossel {
+    margin: 0.8em 0.2em;
+}

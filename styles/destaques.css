@@ -9,17 +9,21 @@
     font-weight: 900;
     color: var(--marron);
     background: var(--cor-destaque);
+    margin-top: 0.8em;
     
 }
 
-.container__destaques__maquiagem {
+
+.container__destaques__secoes {
     background-color: var(--branco);
     border: 1px dashed var(--cor-cabecalho);
     border-radius: 0.5em;
-    width: min-content;
-    height: min-content;
+    width: auto;
+    height: max-content;
     text-align: center;
-    margin: 1em 0.5em;
+    justify-content: center;
+    margin: 0 2em 1.5em 2em;
+    
 }
 
 .container__destaques__titulo {
@@ -29,22 +33,19 @@
     font-weight: 800;
     background-color: var(--cor-destaque);
     margin: 0.5em;
+    white-space: nowrap;
 }
 
 .container__destaque__imagem {
     width: 150px;
     height: 150px;
+    margin-top: 0.5em;
 }
 
 .container__destaque {
-    align-items: start;
+    align-items: center;
 }
 
-
-.informacoes {
-    text-align: left;
-    margin-left: 0.4em;  
-}
 
 .titulo__produto {
     font-size: 16px;
@@ -54,13 +55,14 @@
 }
 
 .valor {
-    margin-top: 0.3em;
+    margin-top: 0.5em;
 }
 
 .valor__atual {
     color: var(--preto);
     font-size: 16px;
     font-weight: 800;
+    margin-bottom: 0.5em;
 }
 
 .valor, .valor__desconto {
@@ -68,12 +70,7 @@
     font-weight: 600;
 }
 
-.desconto {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0.5em 1.2em 0.5em 0 ;
+.valor__desconto {
+    padding: 0.5em 0;
 }
 
-.valor__desconto {
-    margin-left: 0.4em;
-}
