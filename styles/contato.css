@@ -1,0 +1,45 @@
+.contato {
+    margin: 0 0.5em 0.5em 0.5em;
+    border: 1px solid var(--marron);
+    border-radius: 0.8em;
+    font-family: var(--fonte-lista-menu);
+    padding: 0.5em;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--marron);
+    margin: 0.5em 0;
+}
+
+.contato__texto {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--marron);
+    margin-bottom: 0.8em;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;    
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/email.png.png") no-repeat;
+    padding-left: 2em;
+
+    /* Essa configuração traz o mesmo resultado
+    padding: 2em;
+    background-position: 0.2em; */
+}
+
+.contato__email:focus::placeholder {
+    color: transparent;
+    background: transparent;
+}
