@@ -50,14 +50,40 @@
             </ul>
             
             <input type="search" class="container__pesquisa" placeholder="Busque seu produto">
+
+            <img src="img/logo_MV.png.png" alt="Logo da empresa MV cosméticos" class="logo__imagem">
+            <h2 class="container__titulo__logo">COSMÉTICOS</h2>
                         
             <h1 class="container__titulo">MV COSMÉTICOS</h1>
 
+            
         </div>
 
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu">
+                <li class="opcoes__item">CATEGORIAS</li>
+            </label>
+
+            <ul class="opcoes__menu__lista">
+
+                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Lançamentos</a></li>
+                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Maquiagem</a></li>
+                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Perfumaria</a></li>
+                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Kits Para Presentear</a></li>
+                
+            </ul>
+            <li class="opcoes__item"><a href="">FAVORITOS</a></li>
+            <li class="opcoes__item"><a href="">A EMPRESA</a></li>
+            
+        </ul>
+            
+
         <div class="container__link">
+                    
             <a href=""><img src="img/Favoritos.png" class="container__link__curtir"alt="curtir"></a>
             <a href=""><img src="img/carrinho_de_compras.png" class="container__link__imagem"alt="carrinho de compras"></a>
+            <a href=""><img src="img/Usuário.png" class="container__link__usuario"alt="ícone de usuário"></a>
         </div>
     </header>
 
@@ -71,11 +97,20 @@
         <img src="img/mapa.png" alt="ícone mapa do Brasil" class="card__entrega__imagem">
     </section>
     
+
+
+    <section class="busca">
+        <h2 class="busca__titulo">Precisando de algo?</h2>
+        <p class="busca__texto">Encontre em nossa loja tudo o que precisa para ficar radiante</p>
+        <input type="search" class="busca__input" placeholder="Busque seu produto">
+    </section>
+    
     <section class="banner">
         <h1 class="banner__titulo">Prepare-se para uma revolução na sua rotina de beleza!</h1>
         <p class="banner__texto__top">LANÇAMENTO</p>
         <img src="img/linha completa.png.avif" alt="foto da linha completa de lançamento" class="banner__imagem">
-        <p class="banner__texto"><span class="texto__destaque">IMPERDÍVEL!!!</span> <br> DESCUBRA A BELEZA PELA METADE DO PREÇO: <span class="texto__destaque">50% DE DESCONTO</span> NA NOVA LINHA DE LANÇAMENTO "AME-SE!" <a href="">Clique aqui</a></p>
+        <p class="banner__texto"><span class="texto__destaque">IMPERDÍVEL!!!</span> <br> DESCUBRA A BELEZA PELA METADE DO PREÇO: <span class="texto__destaque">50% DE DESCONTO</span> NA NOVA LINHA DE LANÇAMENTO <br>"AME-SE!"</p>
+        <a href="" class="banner__link">SABER MAIS</a>
     </section>
 
     <section class="carrossel">
@@ -92,40 +127,48 @@
             <div class="swiper-wrapper">
             <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="swiper-container">
+                    <div class="swiper-container">   
+
                         <img src="img/locao_corporal.jpg" alt="embalagem loção hidratante">
                         <h2 class="swiper-titulo">LOÇÃO CORPORAL SUAVIDADE CELESTIAL</h2>
                         <p class="swiper-texto">Enriquecida com uma mistura de ingredientes naturais, esta loção luxuosa proporciona hidratação profunda e duradoura, deixando sua pele incrivelmente suave e radiante.</p>
                         <a href="" class="swiper__link">Comprar agora</a>
+                                          
                     </div>
                 </div>
 
 
                 <div class="swiper-slide">
                     <div class="swiper-container">
+
                         <img src="img/perfumeBelaFlore.png" alt="frasco do perfume Bela Flore">
                         <h2 class="swiper-titulo">PERFUME BELA FLORE</h2>
                         <p class="swiper-texto">Este perfume deslumbra com uma mistura única de notas florais e frutadas que evocam uma sensação de frescor e feminilidade radiante.</p>
-                        <a href="" class="swiper__link">Comprar agora</a>
+                        <a href="" class="swiper__link">Comprar agora</a> 
+                    
                     </div>
                 </div>
 
                 <div class="swiper-slide">
                     <div class="swiper-container">
+
                         <img src="img/skincare.png" alt="imagem do kit de skincare">
-                        <h2 class="swiper-titulo">KIT SKINCARE RADIÂNCIA NATURAL</h2>
+                        <h2 class="swiper-titulo">KIT SKINCARE RADIANCE</h2>
                         <p class="swiper-texto">Criada com ingredientes botânicos cuidadosamente selecionados, nossa linha de skincare oferece uma abordagem suave e eficaz para nutrir e revitalizar sua pele.</p>
                         <a href="" class="swiper__link">Comprar agora</a>
+                                            
                     </div>
                 </div>
 
 
                 <div class="swiper-slide">
                     <div class="swiper-container">
+
                         <img src="img/perfume-masculino.png" alt="frasco do perfume Bela Flore">
                         <h2 class="swiper-titulo">PERFUME MAR AZUL</h2>
                         <p class="swiper-texto">Este perfume deslumbra com uma mistura única de notas florais e frutadas que evocam uma sensação de frescor e feminilidade radiante.</p>
                         <a href="" class="swiper__link">Comprar agora</a>
+                                            
                     </div>
                 </div>
 
@@ -325,20 +368,50 @@
 
     </section>
 
+
+ 
+
     <hr class="divisao__carrossel"></hr>
 
     <section class="contato">
-        <h2 class="contato__titulo">FIQUE POR DENTRO DAS NOVIDADES</h2>
-        <p class="contato__texto">Estamos constantemente atualizando nossa linha de produtos, sempre buscando novas maneiras de aprimorar sua jornada de cuidados pessoais e bem-estar.</p>
 
-        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+        <div class="contato__texto">
+            <h2 class="contato__titulo">FIQUE POR DENTRO DAS NOVIDADES</h2>
+            <p class="contato__texto">Estamos constantemente atualizando nossa linha de produtos, sempre buscando novas maneiras de aprimorar sua jornada de cuidados pessoais e bem-estar.</p>
+            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+        </div>
+
+        <div class="contato__grupo">
+
+            <div class="imagem__newslater">
+                <img src="img/celular.png" alt="imagem de um celular com a imagem do perfume Bela Flore na tela" class="contato__imagem">
+            </div>
+
+            <div class="container__texto__grupo">
+                <h2 class="titulo__newslater">Entre em nosso grupo de WhatsApp</h2>
+                <p class="texto__newslater">Fique por dentro nas nossas promoções Diárias</p>
+                <a href="" class="botao__contato">Entrar para o Grupo</a>
+            </div>
+
+        </div>      
+
     </section>
-
 
     
     <footer class="rodape">
 
         <h2 class="rodape__titulo">MV Cosméticos</h2>
+
+
+        <div class="categorias__rodape">
+
+            <li class="lista-menu__item"><img src="img/lançamentos.png" alt="ícone de lançamento" class="lista-menu__imagem"><a href="" class="lista-menu__link">Lançamentos</a></li>
+                <li class="lista-menu__item"><img src="img/maquiagem.png" alt="ícone de ítens de maquiagem" class="lista-menu__imagem"><a href="" class="lista-menu__link">Maquiagem</a></li>
+                <li class="lista-menu__item"><img src="img/perfume.png" alt="ícone de perfume" class="lista-menu__imagem"><a href="" class="lista-menu__link">Perfumaria</a></li>
+                <li class="lista-menu__item"><img src="img/cabelos.png" alt="ícone de cabelo" class="lista-menu__imagem"><a href="" class="lista-menu__link">Cabelos</a></li>
+                <li class="lista-menu__item"><img src="img/presente.png" alt="ícone de presente" class="lista-menu__imagem"><a href="" class="lista-menu__link">Kits Para Presentear</a></li>
+
+        </div>
 
         <div class="rodape-texto__direitos__autorais">
             <p class="rodape__texto">© 2024 Elayne Nascimento Lima. Todos os direitos reservados.</p>
@@ -347,53 +420,24 @@
     </footer>
 
 
-
-    
-
-
-
-
-
-
-    
-
-
-    
-
-
-    
-
-    
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 1,
+
+            breakpoints: {
+                1024: {
+            slidesPerView: 2 // Exibe 2 slides por vez em telas maiores ou iguais a 1024px
+        }
+    },
+
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
             },
             });
+            
     </script>
 
     

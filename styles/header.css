@@ -2,10 +2,10 @@
     display: flex;
     background-color: var(--cor-cabecalho);
     text-align: center;    
-    max-width:100vh;
+    width: 100%vw;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8em 0.8em 0.8em 0;
+    padding: 0.8em 0.3em 0.8em 0;
     height: 25px;
 }
 
@@ -37,10 +37,10 @@
 .container__pesquisa {
     width: 35px;
     height: 35px;
-    background: url(../img/lupa.png) no-repeat right;
+    background: url(../img/lupa_pesquisa.png) no-repeat right;
     border: var(--branco);
     position: relative;
-     color: transparent;         
+    color: transparent;         
 }
 
 .container__pesquisa::placeholder {
@@ -163,4 +163,127 @@
 
 .container__botao {
     display: none;
+}
+
+.logo__imagem {
+    display: none;
+}
+
+.container__titulo__logo {
+    display: none;
+}
+
+.container__link__usuario {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        position: relative;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        margin-left: 0.3em;
+    }
+
+    .container__titulo {
+        display: none;
+    }
+
+    .logo__imagem {
+        display: block;
+        width: 42px;
+        height: 42px;
+    }
+    
+    .container__titulo__logo {
+        display: block;
+        font-size: 20px;
+        font-family: var(--fonte-lista-menu);
+        font-weight: 700;
+    }
+
+    .container__link__curtir {
+        display: none;
+    }
+
+    .container__pesquisa {
+        display: none;
+    }
+
+    .container__link__usuario {
+        display: block;
+        margin: 0 0.5em 0 0.8em;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        font-family: var(--fonte-lista-menu);
+        font-size: 18px;
+        font-weight: 700;
+        padding: 1em 2em;
+        color: var(--preto);
+    }
+
+    .opcoes__item a {
+        text-decoration: none;
+        font-family: var(--fonte-lista-menu);
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--preto);
+    }
+
+    .opcoes__menu__lista {
+        display: none;
+        position: absolute;
+        top: 100%;
+        font-family: var(--fonte-lista-menu);
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--cor-cabecalho);
+        text-align: left;
+        margin-left: 2em;
+        padding: 1em 1em;
+        width: auto;
+        
+    }
+
+    .opcoes__botao:checked ~ .opcoes__menu__lista {
+        display: block;
+    }
+
+    .opcoes__menu__link {
+        text-decoration: none;
+        color: var(--preto);
+        margin: 1em 0;
+    }
+
+    .opcoes__menu__item {
+        padding: 1em 0;
+    }
+
+    .opcoes__menu__item:hover {
+        background-color: var(--cor-hover);
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
 }

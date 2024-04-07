@@ -3,6 +3,7 @@
     text-align: center;
     border: 1px solid var(--marron);
     border-radius: 0.5em;
+    padding-bottom: 1em;
 }
 
 .banner__titulo {
@@ -36,3 +37,40 @@
     max-width: 100%;
 }
 
+.banner__link {
+    text-decoration: none;
+    background-color: var(--cor-cabecalho);
+    border: 1px solid var(--marron);
+    border-radius: 1px;
+    padding: 0.2em ;
+    margin: 1em 0;
+    color: var(--preto);
+    font-size: 14px;
+    font-family: var(--fonte-lista-menu);
+    font-weight: 600;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 24px;
+    }
+
+    .banner__texto__top {
+        font-size: 20px;
+    }
+
+    .banner__texto {
+        font-size: 18px;
+        padding: 0.5em 0;
+    }
+
+    .banner__link {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+}

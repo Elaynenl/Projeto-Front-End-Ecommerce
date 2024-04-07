@@ -6,11 +6,13 @@
 @import url(styles/destaques.css);
 @import url(styles/contato.css);
 @import url(styles/rodape.css);
+@import url(styles/busca.css);
 
 
 :root {
     --cor-de-fundo: #FFCFD9;
     --cor-cabecalho: #c26a61;
+    --cor-hover: #ca9089;
     /* --cor-cabecalho-projeto-inicial: #fa8072; */
     --preto: #000000;
     --pastel-gradiente: #5F0E0E;
@@ -23,6 +25,10 @@
     --cinza: #858585;
     --marron: #381614;
     --cor-destaque: #d8d9f1;
+    --cor-botao-app: #006158;
+    --cor-background-botao: #6bdca8;
+    --cor-texto-botao-app: #00b864;
+    --cor-hover-botao-app: #1bd37f;
     --fonte-lista-menu: 'Mulish';
     --fonte-card: 'Cabin-condensed';
     
@@ -30,11 +36,13 @@
 
 body {
     background-color: var(--cor-de-fundo);
+    
+    
 }
 
 hr {
     margin: 0 0.2em;
     border: 0;
-    height: 1px;
+    height: 2px;
     background: var(--cor-destaque);
 }

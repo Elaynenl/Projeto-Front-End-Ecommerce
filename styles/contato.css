@@ -30,6 +30,7 @@
 
 .contato__email::placeholder {
     font-family: var(--fonte-principal);
+    font-size: larger;
     color: var(--marron);
     background: url("../img/email.png.png") no-repeat;
     padding-left: 2em;
@@ -42,4 +43,75 @@
 .contato__email:focus::placeholder {
     color: transparent;
     background: transparent;
+}
+
+.contato__grupo {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contato__titulo {
+        font-size: 20px;
+    }
+
+    .contato__email {
+        width: 400px;
+        height: 20px;
+    }
+
+    .contato__imagem {
+        width: 280px;
+        height: auto;
+    }
+
+    .contato__texto {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        padding: 0.5em;
+    }
+    
+    .contato__grupo {
+        display: flex;
+        align-items: center;
+    }
+
+    .container__texto__grupo {
+        font-family:var(--fonte-lista-menu);
+        color: var(--marron);
+        margin: 0 1em 2em 0;
+        width: 50%;
+    }
+
+    .titulo__newslater {
+        font-size: 20px;
+        font-weight: 800;
+        width: 100%;
+    }
+
+    .texto__newslater {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0.8em 0;
+        padding: 0.6em 0 0.9em 0;
+    }
+
+    .botao__contato {
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--cor-background-botao);
+        border: 3px solid var(--cor-texto-botao-app);
+        color: var(--cor-botao-app);
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 24px;
+        margin-top: 3em;
+    }
 }

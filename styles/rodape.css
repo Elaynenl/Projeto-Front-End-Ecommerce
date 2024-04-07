@@ -22,3 +22,28 @@
 .rodape-texto__direitos__autorais {
     align-items: baseline;
 }
+
+.categorias__rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .categorias__rodape {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin: 1em;
+    }
+
+    .lista-menu__link {
+        font-size: 18px ;
+    }
+
+    .lista-menu__imagem {
+        width: 38px;
+        height: 38px;
+        padding: 0.5em
+    }   
+    
+}

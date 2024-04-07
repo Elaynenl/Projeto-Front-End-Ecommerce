@@ -5,10 +5,10 @@
     padding: 0.2em 0;
     border: 1px solid var(--cor-cabecalho);
     border-radius: 0.2em;
-    margin: 0.4em 0.2em 0 0.2em;
+    margin: 0.4em 0.1em;
     flex-wrap: wrap;
     text-align: center;
-    width: 98%;
+    width: 100%vw;
     height: auto;
     font-family: var(--fonte-card); 
 }
@@ -49,4 +49,26 @@
     font-size: 9px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .card__entrega__titulo {
+        font-family: var(--fonte-card);
+        font-size: 17px;   
+    }
+
+    .card__texto__subtitulo {
+        font-size: 16px;
+    }
+
+    .card__texto__paragrafo {
+        font-size: 14px;
+    }
+
+    .card__entrega__imagem{
+        width: 60px;
+        height: 60px;
+    }
+}
+    
 
