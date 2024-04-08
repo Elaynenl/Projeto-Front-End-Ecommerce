@@ -71,7 +71,7 @@
     background-color: var(--cor-cabecalho);
     font-size: 20px;
     font-family: var(--fonte-lista-menu);
-    font-weight: 700;
+    font-weight: 900;
     white-space: nowrap;
 }
 
@@ -181,6 +181,18 @@
     display: none;
 }
 
+.opcoes-lista-menu {
+    display: none;
+}
+
+.menu-lista-subitem {
+    display: none;
+}
+
+.titulo__icone {
+    display: none;
+}
+
 
 
 @media screen and (min-width: 1024px) {
@@ -213,7 +225,7 @@
         display: block;
         font-size: 20px;
         font-family: var(--fonte-lista-menu);
-        font-weight: 700;
+        font-weight: 900;
     }
 
     .container__link__curtir {
@@ -284,6 +296,81 @@
 
     .opcoes__botao {
         display: none;
+    }   
+}
+
+
+
+@media screen and (min-width: 1728px) {
+    .opcoes {
+        display: none;
     }
 
+    .opcoes__subitem {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    .opcoes__lista__botao:checked ~ .opcoes__subitem {
+        display: block;
+    }
+
+    .opcoes__subitem, .opcoes__menu__subitem {
+        padding: 1em;
+        background-color: var(--cor-cabecalho);
+    }
+    
+    .opcoes__menu__subitem {
+        margin: left;
+    }
+
+    .opcoes-lista {
+        font-family: var(--fonte-lista-menu);
+        color: var(--preto);
+        align-items: center;
+    }
+
+    .opcoes__lista__titulo {
+        font-size: 20px;
+        padding: 0 2em;
+        font-weight: 800;
+    }
+
+    .opcoes__subitem__link {
+        text-decoration: none;
+        color: var(--preto);
+        
+        
+    }
+
+    .opcoes__lista__botao {
+        display: none;
+    }
+
+    .menu-lista-subitem {
+        display: block;
+        font-family: var(--fonte-lista-menu);
+    }
+
+    .opcoes__menu__link {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .titulo__icone {
+        display: block;
+        font-family: var(--fonte-lista-menu);
+        font-weight: 600;
+        color: var(--preto);
+        padding: 0.5em;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+
+    
+    
+    
+    
 }

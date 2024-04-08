@@ -77,14 +77,99 @@
             <li class="opcoes__item"><a href="">A EMPRESA</a></li>
             
         </ul>
-            
+
+      
+        <div class="menu-lista-subitem">
+
+            <ul class="opcoes-lista">
+                <input type="checkbox" id="opcoes__lista__menu1" class="opcoes__lista__botao">
+                <label for="opcoes__lista__menu1">
+                    <li class="opcoes__lista__titulo">MAQUIAGEM</li>
+                </label>
+
+                <ul class="opcoes__subitem">
+
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">OLHOS</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">ROSTO</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">LABIOS</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">ACESSÓRIOS</a></li>
+                    
+                </ul>
+            </ul>
+
+        </div>
+        
+        <div class="menu-lista-subitem">
+
+            <ul class="opcoes-lista">
+                <input type="checkbox" id="opcoes__lista__menu2" class="opcoes__lista__botao">
+                <label for="opcoes__lista__menu2">
+                    <li class="opcoes__lista__titulo">PERFUMES</li>
+                </label>
+
+                <ul class="opcoes__subitem">
+
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__subitem__link">FEMININO</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__subitem__link">MASCULINO</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__subitem__link">EAU COLOGNE</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__subitem__link">PARFUM</a></li>
+                    
+                </ul>
+            </ul> 
+
+        </div>
+
+
+            <div class="menu-lista-subitem">
+
+                <ul class="opcoes-lista">
+                    <input type="checkbox" id="opcoes__lista__menu3" class="opcoes__lista__botao">
+                    <label for="opcoes__lista__menu3">
+                        <li class="opcoes__lista__titulo">CABELOS</li>
+                    </label>
+
+                    <ul class="opcoes__subitem">
+
+                        <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">MÁSCARAS</a></li>
+                        <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">PERSONALIZAR</a></li>
+                        <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">CRONOGRAMA CAPILAR</a></li>
+                        <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">LINHAS POR TIPO DE CABELO</a></li>
+                        
+                    </ul>
+                </ul>
+
+            </div> 
+
+        <div class="menu-lista-subitem">
+
+            <ul class="opcoes-lista">
+                <input type="checkbox" id="opcoes__lista__menu4" class="opcoes__lista__botao">
+                <label for="opcoes__lista__menu4">
+                    <li class="opcoes__lista__titulo">CORPO</li>
+                </label>
+
+                <ul class="opcoes__subitem">
+
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">HIDRATANTES</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">CREME DEPILATÓRIO</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">LOÇÃO</a></li>
+                    <li class="opcoes__menu__subitem"><a href="" class="opcoes__menu__link">MASSAGEM</a></li>
+                    
+                </ul>
+            </ul> 
+
+        </div>  
+        
 
         <div class="container__link">
                     
             <a href=""><img src="img/Favoritos.png" class="container__link__curtir"alt="curtir"></a>
             <a href=""><img src="img/carrinho_de_compras.png" class="container__link__imagem"alt="carrinho de compras"></a>
+            <a href="" class="titulo__icone">Meu<br>Carrinho</a>
             <a href=""><img src="img/Usuário.png" class="container__link__usuario"alt="ícone de usuário"></a>
+            <a href="" class="titulo__icone">Olá, Bem-vindo!<br>Entrar/Cadastrar</a>
         </div>
+        
     </header>
 
     <section class="card__entrega">
@@ -167,6 +252,19 @@
                         <img src="img/perfume-masculino.png" alt="frasco do perfume Bela Flore">
                         <h2 class="swiper-titulo">PERFUME MAR AZUL</h2>
                         <p class="swiper-texto">Este perfume deslumbra com uma mistura única de notas florais e frutadas que evocam uma sensação de frescor e feminilidade radiante.</p>
+                        <a href="" class="swiper__link">Comprar agora</a>
+                                            
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <div class="swiper-container">
+
+                        <img src="img/linha_make.jpg" alt="imagem de um kit de produtos de maquiagem e perfume">
+                        <h2 class="swiper-titulo">AURORA ELEGANCE</h2>
+                        <p class="swiper-texto">Descubra o poder de refletir sua verdadeira essência com cada aplicação, enquanto desfruta de uma experiência de beleza única e memorável.</p>
                         <a href="" class="swiper__link">Comprar agora</a>
                                             
                     </div>
@@ -375,7 +473,7 @@
 
     <section class="contato">
 
-        <div class="contato__texto">
+        <div class="contato__texto__container">
             <h2 class="contato__titulo">FIQUE POR DENTRO DAS NOVIDADES</h2>
             <p class="contato__texto">Estamos constantemente atualizando nossa linha de produtos, sempre buscando novas maneiras de aprimorar sua jornada de cuidados pessoais e bem-estar.</p>
             <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
@@ -383,13 +481,13 @@
 
         <div class="contato__grupo">
 
-            <div class="imagem__newslater">
+            <div class="imagem__newsletter">
                 <img src="img/celular.png" alt="imagem de um celular com a imagem do perfume Bela Flore na tela" class="contato__imagem">
             </div>
 
             <div class="container__texto__grupo">
-                <h2 class="titulo__newslater">Entre em nosso grupo de WhatsApp</h2>
-                <p class="texto__newslater">Fique por dentro nas nossas promoções Diárias</p>
+                <h2 class="titulo__newsletter">Entre em nosso grupo de WhatsApp</h2>
+                <p class="texto__newsletter">Fique por dentro nas nossas promoções Diárias</p>
                 <a href="" class="botao__contato">Entrar para o Grupo</a>
             </div>
 
@@ -428,15 +526,19 @@
 
             breakpoints: {
                 1024: {
-            slidesPerView: 2 // Exibe 2 slides por vez em telas maiores ou iguais a 1024px
-        }
-    },
-
+                slidesPerView: 2 // Exibe 2 slides por vez em telas maiores ou iguais a 1024px
+                },
+                1728: {
+                slidesPerView: 3 // Exibe 3 slides por vez em telas maiores ou iguais a 1728px
+                }
+            }, 
+          
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
             },
-            });
+
+        });
             
     </script>
 
