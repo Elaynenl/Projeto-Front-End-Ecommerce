@@ -137,7 +137,7 @@
 .lista-menu__link {
     text-align: center;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--preto);
     text-decoration: none;
     margin: 1em 0 1em 0;
@@ -153,6 +153,10 @@
 
 .lista-menu__subtitulo, .lista-menu__cadastro {
     text-align: center;
+}
+
+.lista-menu__cadastro {
+    margin: 0.5em 0;
 }
 
 .lista-menu__imagem {
