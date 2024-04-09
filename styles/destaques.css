@@ -9,8 +9,7 @@
     font-weight: 900;
     color: var(--marron);
     background: var(--cor-destaque);
-    margin-top: 0.8em;
-    
+    margin-top: 0.8em;   
 }
 
 
@@ -75,10 +74,3 @@
     padding: 0.5em 0;
 }
 
-
-@media screen and (min-width: 1024px) {
-    
-    
-
-
-}

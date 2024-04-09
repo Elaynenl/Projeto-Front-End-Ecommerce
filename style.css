@@ -29,15 +29,14 @@
     --cor-background-botao: #6bdca8;
     --cor-texto-botao-app: #00b864;
     --cor-hover-botao-app: #1bd37f;
+    --cor-link:#0000FF;
     --fonte-lista-menu: 'Mulish';
     --fonte-card: 'Cabin-condensed';
     
 }
 
 body {
-    background-color: var(--cor-de-fundo);
-    
-    
+    background-color: var(--cor-de-fundo);   
 }
 
 hr {

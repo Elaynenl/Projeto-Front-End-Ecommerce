@@ -156,6 +156,8 @@
 }
 
 .lista-menu__cadastro {
+    text-decoration: none;
+    color: var(--cor-link);
     margin: 0.5em 0;
 }
 
@@ -342,9 +344,7 @@
 
     .opcoes__subitem__link {
         text-decoration: none;
-        color: var(--preto);
-        
-        
+        color: var(--preto);    
     }
 
     .opcoes__lista__botao {
@@ -369,11 +369,5 @@
         padding: 0.5em;
         font-size: 14px;
         text-decoration: none;
-    }
-
-
-    
-    
-    
-    
+    }    
 }
