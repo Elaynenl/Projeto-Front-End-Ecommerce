@@ -7,10 +7,12 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
 
 ## Tecnologias Utilizadas
 
-<img align="center" heigth="40" width="48" alt="logo do HTML5" src="./img/logo_HTML.svg"/>
-<img align="center" heigth="43" width="48" alt="logo do CSS3" src="./img/logo_css.svg"/>
-<img align="center" heigth="30" width="43" alt="logo do photosho" src="./img/logo_photoshop.svg"/>
-<img align="center" heigth="30" width="36" alt="logo do figma" src="./img/logo_figma.svg"/>
+<div display="flex">
+  <img align="center" heigth="40" width="48" alt="logo do HTML5" src="./img/logo_HTML.svg"/>
+  <img align="center" heigth="43" width="48" alt="logo do CSS3" src="./img/logo_css.svg"/>
+  <img align="center" heigth="30" width="43" alt="logo do photosho" src="./img/logo_photoshop.svg"/>
+  <img align="center" heigth="30" width="36" alt="logo do figma" src="./img/logo_figma.svg"/>
+</div>
 
 <br>
 
