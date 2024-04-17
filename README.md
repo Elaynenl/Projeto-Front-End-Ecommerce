@@ -119,3 +119,15 @@ Acesse o projeto completo: <br>
 [GitHub Pages](https://elaynenl.github.io/Projeto-Front-End-Ecommerce/)
 <br>
 [Vercel](https://projeto-front-end-ecommerce.vercel.app/)
+
+<br>
+
+## Autor
+
+<p>Desenvolvido por Elayne Nascimento Lima</p>
+
+## Licença
+
+<p>Projeto licenciado sob a licenca MIT.</p>
+
+
