@@ -50,11 +50,13 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
 
 <br><br>
 
-<img align="center" heigth="80" width="150" alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme1.png">
-  <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme2.png">
-  <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme3.png">
-  <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme4.png">
-  <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme5.png">
+<div display="flex">
+  <img align="center" heigth="80" width="150" alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme1.png">
+    <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme2.png">
+    <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme3.png">
+    <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme4.png">
+    <img align="center" heigth="80" width="150"  alt="imagem de um celular com o site da empresa MV Cosméticos" src="./img/celular_readme5.png">
+</div>
 
 <br>
 
@@ -77,6 +79,7 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
 
 <br><br>
 
+
 <div display="flex">
   <img align="center" heigth="80" width="250" alt="imagem de um tablet com o site da empresa MV Cosméticos" src="./img/tablet_readme1.png">
   <img align="center" heigth="80" width="250"  alt="imagem de um tablet com o site da empresa MV Cosméticos" src="./img/tablet_readme2.png">
@@ -97,11 +100,13 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
 
 <br><br>
 
+<div display="flex">
   <img align="center" heigth="80" width="250" alt="imagem de um monitor de computador com o site da empresa MV Cosméticos" src="./img/pc_readme1.png">
   <img align="center" heigth="80" width="250"  alt="imagem de um computador com o site da empresa MV Cosméticos" src="./img/pc_readme2.png">
   <img align="center" heigth="80" width="250"  alt="imagem de um computador com o site da empresa MV Cosméticos" src="./img/pc_readme3.png">
+</div>
 
-<b>
+<br>
 
 ## Status do projeto
 
