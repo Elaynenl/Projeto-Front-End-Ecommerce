@@ -115,4 +115,7 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
 <p>Apesar dos ícones serem clicávéis e possuir menu já determinado, campo de busca e cadastrao de e-mail... Ainda não faz o direcionamento específico.</p>
 
 
-Acesse o projeto através deste [link](https://elaynenl.github.io/Projeto-Front-End-Ecommerce/).
+Acesse o projeto completo: <br>
+[GitHub Pages](https://elaynenl.github.io/Projeto-Front-End-Ecommerce/)
+<br>
+[Vercel](https://projeto-front-end-ecommerce.vercel.app/)
