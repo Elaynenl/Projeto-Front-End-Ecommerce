@@ -34,6 +34,10 @@ menus.forEach(menu => {
         submenu.style.display = "block";
     })
 
+    submenu.addEventListener("mouseover", () => {
+        submenu.style.display = "block";
+    })
+
     menu.addEventListener("mouseout", () => {
         submenu.style.display = "none"
     })
