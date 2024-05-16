@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="conteudo" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
     <link rel="stylesheet" href="style.css">
+    <script src="./JS/interacaoMenus.js" defer></script>
+    <script src="./JS/cadastrarEmail.js" defer></script>
 
 
 </head>
@@ -79,7 +81,7 @@
         </ul>
 
       
-        <div class="menu-lista-subitem">
+        <div class="menu-lista-subitem" id="menu1">
 
             <ul class="opcoes-lista">
                 <input type="checkbox" id="opcoes__lista__menu1" class="opcoes__lista__botao">
@@ -99,7 +101,7 @@
 
         </div>
         
-        <div class="menu-lista-subitem">
+        <div class="menu-lista-subitem" id="menu2">
 
             <ul class="opcoes-lista">
                 <input type="checkbox" id="opcoes__lista__menu2" class="opcoes__lista__botao">
@@ -120,7 +122,7 @@
         </div>
 
 
-            <div class="menu-lista-subitem">
+            <div class="menu-lista-subitem" id="menu3">
 
                 <ul class="opcoes-lista">
                     <input type="checkbox" id="opcoes__lista__menu3" class="opcoes__lista__botao">
@@ -140,7 +142,7 @@
 
             </div> 
 
-        <div class="menu-lista-subitem">
+        <div class="menu-lista-subitem" id="menu4">
 
             <ul class="opcoes-lista">
                 <input type="checkbox" id="opcoes__lista__menu4" class="opcoes__lista__botao">
@@ -474,7 +476,11 @@
         <div class="contato__texto__container">
             <h2 class="contato__titulo">FIQUE POR DENTRO DAS NOVIDADES</h2>
             <p class="contato__texto">Estamos constantemente atualizando nossa linha de produtos, sempre buscando novas maneiras de aprimorar sua jornada de cuidados pessoais e bem-estar.</p>
-            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+
+            <form class="formulario__email" id="emailForm">
+                <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" id="emailInput">
+                <button type="submit" class="botao__cadastrar">Enviar</button>
+            </form>
         </div>
 
         <div class="contato__grupo">

@@ -14,6 +14,7 @@
 }
 
 .contato__texto {
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
     color: var(--marron);
@@ -29,10 +30,12 @@
 }
 
 .contato__email::placeholder {
+    text-align: center;
     font-family: var(--fonte-principal);
-    font-size: larger;
+    font-size: 16px;
     color: var(--marron);
     background: url("../img/email.png.png") no-repeat;
+    background-position: 4em;
     padding-left: 2em;
 
     /* Essa configuração traz o mesmo resultado
@@ -43,6 +46,24 @@
 .contato__email:focus::placeholder {
     color: transparent;
     background: transparent;
+}
+
+.botao__cadastrar {
+    font-size: 16px;
+    font-weight: 800;
+    font-family: var(--fonte-lista-menu);
+    color: var(--marron);
+    border: 1.5px solid var(--cor-cabecalho);
+    border-radius: 0.5em;
+    padding: 0.2em 0.6em;
+    margin: 0.5em;
+}
+
+.formulario__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .contato__grupo {
@@ -69,6 +90,15 @@
     .contato__email {
         width: 400px;
         height: 20px;
+    }
+
+    .botao__cadastrar {
+        font-size: 19px;
+    }
+
+    .contato__email::placeholder{
+        font-size: 18px;
+        background-position: 5em
     }
 
     .contato__imagem {
@@ -144,6 +174,15 @@
     .contato__email {
         width: 600px;
         height: 20px;
+    }
+
+    .botao__cadastrar {
+        font-size: 20px;
+    }
+
+    .contato__email::placeholder{
+        font-size: 22px;
+        background-position: 8em
     }
     
 }
