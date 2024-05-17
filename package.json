@@ -1,0 +1,14 @@
+{
+  "name": "projeto-front-end-ecommerce",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"><img src=\"./img/logo_readme.png\"></h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}

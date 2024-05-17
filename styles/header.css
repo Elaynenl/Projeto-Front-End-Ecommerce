@@ -249,6 +249,7 @@
 
     .opcoes {
         display: flex;
+        cursor: pointer;
     }
 
     .opcoes__item {
@@ -276,8 +277,6 @@
         font-weight: 700;
         background-color: var(--cor-cabecalho);
         text-align: left;
-        margin-left: 2em;
-        padding: 1em 1em;
         width: auto;
         
     }
@@ -287,24 +286,26 @@
     }
 
     .opcoes__menu__link {
+        text-align: left;
         text-decoration: none;
         color: var(--preto);
         margin: 1em 0;
+        padding: 1em 0.5em 1em 1.5em;
     }
 
     .opcoes__menu__item {
         padding: 1em 0;
     }
 
-    .opcoes__menu__item:hover {
+    .opcoes__menu__item:hover, .opcoes__item:hover {
         background-color: var(--cor-hover);
     }
 
     .opcoes__botao {
         display: none;
     }   
-}
 
+}
 
 
 @media screen and (min-width: 1728px) {
@@ -317,8 +318,20 @@
         position: absolute;
         top: 100%;
         text-align: left;
-        padding: 1em;
+        padding: 1em 0;
         background-color: var(--cor-cabecalho);
+        width: auto;
+    }
+
+    .opcoes__menu__subitem__link {
+        font-family: var(--fonte-lista-menu);
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        text-decoration: none;
+        color: var(--preto);
+        margin: 1em 0;
+        padding: 1em 1.9em;
     }
 
     .opcoes__lista__botao:checked ~ .opcoes__subitem {
@@ -327,7 +340,7 @@
 
       
     .opcoes__menu__subitem {
-        padding: 1em 0 1em 0.5em;
+        padding: 1em 0 1em 0;
     }
 
     .opcoes-lista {
@@ -338,13 +351,8 @@
 
     .opcoes__lista__titulo {
         font-size: 20px;
-        padding: 0 1em;
+        padding: 0.9em 1em;
         font-weight: 800;
-    }
-
-    .opcoes__subitem__link {
-        text-decoration: none;
-        color: var(--preto);    
     }
 
     .opcoes__lista__botao {
@@ -354,13 +362,18 @@
     .menu-lista-subitem {
         display: block;
         font-family: var(--fonte-lista-menu);
+        cursor: pointer;
     }
 
     .opcoes__menu__link {
+        padding: 1em;
         font-size: 16px;
         font-weight: 700;
     }
-
+    
+    .opcoes__lista__titulo:hover, .opcoes__menu__link:hover, .opcoes__menu__subitem:hover {
+        background-color: var(--cor-hover);
+    }
     .titulo__icone {
         display: block;
         font-family: var(--fonte-lista-menu);
@@ -369,5 +382,6 @@
         padding: 0.5em;
         font-size: 14px;
         text-decoration: none;
-    }    
+    } 
+    
 }
