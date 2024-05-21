@@ -1,0 +1,25 @@
+import {conectaApi} from "./conectaApi.js";
+ 
+const lista = document.querySelector(".produtos__promo");
+
+function constroiCard(titulo__produto, imagem, valor_original, valor__desconto, valor__atual) {
+    const produtoEmPromo = document.createElement("li");
+    produtoEmPromo.className = "container__produto-promo";
+    produtoEmPromo.innerHTML = `<a href="" class="container__destaque__link"><img src="${imagem}" alt="imagem de um frasco de perfume masculino" class="container__destaque__imagem"></a>
+    <h3 class="titulo__produto">${titulo__produto}</h3>
+    <p class="valor"> <s>${valor_original}</s></p>
+    <p class="valor__desconto">${valor__desconto}</p>
+    <p class="valor__atual">${valor__atual}</p>
+    <a href="" class="botao__comprar-produto">COMPRAR</a>`
+
+    return produtoEmPromo;
+}
+
+
+async function listaProdutos() {
+    const listaApi = await conectaApi.listaProdutos(); 
+    listaApi.forEach(elemento => lista.appendChild(
+        constroiCard(elemento.titulo__produto, elemento.imagem, elemento.valor_original, elemento.valor__desconto, elemento.valor__atual)))
+}
+
+listaProdutos();

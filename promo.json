@@ -1,0 +1,90 @@
+{
+    "promocoes": 
+    [
+        {
+            "titulo__produto": "Delineador Olhar Radiante",
+            "imagem": "../img/delineador destaque.png",
+            "valor_original": "$99,90",
+            "valor__desconto": "-40%",
+            "valor__atual": "R$59,94"
+        },
+        {
+            "titulo__produto": "Batom Divine Glamour",
+            "imagem": "../img/batom_destaque.jpg",
+            "valor_original": "$69,90",
+            "valor__desconto": "-30%",
+            "valor__atual": "R$34,90"
+        },
+        {
+            "titulo__produto": "Kit de maquiagem EssencialBeauty",
+            "imagem": "../img/kit-maquiagem-destaque.png",
+            "valor_original": "R$126,79",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$94,90"
+        },
+        {
+            "titulo__produto": "Perfume Feminino Elysian Blossom",
+            "imagem": "../img/perfume1_destaque.png",
+            "valor_original": "$199,90",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$149,93"
+        },
+        {
+            "titulo__produto": "Perfume Masculino Noble Oak",
+            "imagem": "../img/perfume-masculino-destaque.png",
+            "valor_original": "$169,90",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$127,43"
+        },
+        {
+            "titulo__produto": "Perfume Feminino Serenity Charm",
+            "imagem": "../img/perfume2_destaque.png",
+            "valor_original": "R$126,79",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$94,90"
+        },
+        {
+            "titulo__produto": "Kit Cronograma Você Radiante",
+            "imagem": "../img/kit-cronograma.png",
+            "valor_original": "$299,90",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$224,93"
+        },
+        {
+            "titulo__produto": "Brilho Vital Hair Oil",
+            "imagem": "../img/oleo-cabelo.png",
+            "valor_original": "$89,90",
+            "valor__desconto": "-50%",
+            "valor__atual": "R$44,95"
+        },
+        {
+            "titulo__produto": "Máscara Revitaliza & Restaura Hair",
+            "imagem": "../img/mascara-capilar.png",
+            "valor_original": "R$126,79",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$94,90"
+        },
+        {
+            "titulo__produto": "Necessaire Cuidados Diários",
+            "imagem": "../img/kit-presente1.png",
+            "valor_original": "$130,90",
+            "valor__desconto": "-20%",
+            "valor__atual": "R$104,72"
+        },
+        {
+            "titulo__produto": "Cesta Explosion Beauty",
+            "imagem": "../img/kit-presente2.png",
+            "valor_original": "$208,90",
+            "valor__desconto": "-15%",
+            "valor__atual": "R$177,57"
+        },
+        {
+            "titulo__produto": "Cesta Presente Sempre Bela",
+            "imagem": "../img/kit-presente3.png",
+            "valor_original": "R$186,79",
+            "valor__desconto": "-25%",
+            "valor__atual": "R$140,09"
+        }
+
+    ]
+}

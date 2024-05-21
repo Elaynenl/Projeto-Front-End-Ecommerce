@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="./JS/interacaoMenus.js" defer></script>
     <script src="./JS/cadastrarEmail.js" defer></script>
+    <script src="./JS/campoPesquisa.js" defer></script>
 
 
 </head>
@@ -20,7 +21,7 @@
     <header class="cabecalho">  
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" id="label">
                 <span class="cabecalho__menu-hamburguer container__imagem"></span>
             </label>
 
@@ -37,11 +38,11 @@
                 </div>
                 <hr></hr>
 
-                <li class="lista-menu__item"><img src="img/lançamentos.png" alt="ícone de lançamento" class="lista-menu__imagem"><a href="" class="lista-menu__link">Lançamentos</a></li>
-                <li class="lista-menu__item"><img src="img/maquiagem.png" alt="ícone de ítens de maquiagem" class="lista-menu__imagem"><a href="" class="lista-menu__link">Maquiagem</a></li>
-                <li class="lista-menu__item"><img src="img/perfume.png" alt="ícone de perfume" class="lista-menu__imagem"><a href="" class="lista-menu__link">Perfumaria</a></li>
+                <li class="lista-menu__item"><img src="img/lançamentos.png" alt="ícone de lançamento" class="lista-menu__imagem"><a href="./HTML/lancamentos.html" class="lista-menu__link">Lançamentos</a></li>
+                <li class="lista-menu__item"><img src="img/maquiagem.png" alt="ícone de ítens de maquiagem" class="lista-menu__imagem"><a href="./HTML/maquiagem.html" class="lista-menu__link">Maquiagem</a></li>
+                <li class="lista-menu__item"><img src="img/perfume.png" alt="ícone de perfume" class="lista-menu__imagem"><a href="./HTML/perfumaria.html" class="lista-menu__link">Perfumaria</a></li>
                 <li class="lista-menu__item"><img src="img/cabelos.png" alt="ícone de cabelo" class="lista-menu__imagem"><a href="" class="lista-menu__link">Cabelos</a></li>
-                <li class="lista-menu__item"><img src="img/presente.png" alt="ícone de presente" class="lista-menu__imagem"><a href="" class="lista-menu__link">Kits Para Presentear</a></li>
+                <li class="lista-menu__item"><img src="img/presente.png" alt="ícone de presente" class="lista-menu__imagem"><a href="./HTML/kitsParaPresentear.html" class="lista-menu__link">Kits Para Presentear</a></li>
                 <hr></hr>
 
                 <li class="lista-menu__item"><img src="img/logo_MV.png.png" alt="logo da MV COSMÉTICOS" class="lista-menu__imagem"><a href="" class="lista-menu__link">Sobre a MV Cosméticos</a></li>
@@ -69,10 +70,11 @@
 
             <ul class="opcoes__menu__lista">
 
-                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Lançamentos</a></li>
-                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Maquiagem</a></li>
-                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Perfumaria</a></li>
-                <li class="opcoes__menu__item"><a href="" class="opcoes__menu__link">Kits Para Presentear</a></li>
+                <li class="opcoes__menu__item"><a href="./HTML/promo.html" class="opcoes__menu__link">Promoções</a></li>
+                <li class="opcoes__menu__item"><a href="./HTML/lancamentos.html" class="opcoes__menu__link">Lançamentos</a></li>
+                <li class="opcoes__menu__item"><a href="./HTML/maquiagem.html" class="opcoes__menu__link">Maquiagem</a></li>
+                <li class="opcoes__menu__item"><a href="./HTML/perfumaria.html" class="opcoes__menu__link">Perfumaria</a></li>
+                <li class="opcoes__menu__item"><a href="./HTML/kitsParaPresentear.html" class="opcoes__menu__link">Kits Para Presentear</a></li>
                 
             </ul>
             <li class="opcoes__item"><a href="">FAVORITOS</a></li>
@@ -508,9 +510,9 @@
 
                 <div class="links__redes__rodape">
                     <p class="rodape__texto__redes">Siga-nos nas Redes Sociais<p>
-                    <a href="" class="link__redes__rodape"><img src="img/logo_Facebook.png" alt="imagem da logo da rede social facebook" class="imagem__link__rodape"></a>
-                    <a href="" class="link__redes__rodape"><img src="img/logo_Instagram.png" alt="imagem da logo da rede social Instagram" class="imagem__link__rodape"></a>
-                    <a href="" class="link__redes__rodape"><img src="img/logo_Twitter.png" alt="imagem da logo da rede social Twitter" class="imagem__link__rodape"></a>
+                    <a href="https://www.facebook.com/" class="link__redes__rodape"><img src="img/logo_Facebook.png" alt="imagem da logo da rede social facebook" class="imagem__link__rodape"></a>
+                    <a href="https://www.instagram.com/" class="link__redes__rodape"><img src="img/logo_Instagram.png" alt="imagem da logo da rede social Instagram" class="imagem__link__rodape"></a>
+                    <a href="https://x.com/i/flow/login" class="link__redes__rodape"><img src="img/logo_Twitter.png" alt="imagem da logo da rede social Twitter" class="imagem__link__rodape"></a>
                 </div>
             </div>
 

@@ -2,6 +2,19 @@ const menuCategorias = document.querySelector(".opcoes__item")
 const subMenuCategorias = document.querySelector(".opcoes__menu__lista")
 
 
+//Interação mobile
+
+document.addEventListener('click', (event)=> {
+    const containerMenu = document.querySelector('.container').contains(event.target);
+    const menuCheckbox = document.getElementById('menu');
+
+    if (!containerMenu) {
+        menuCheckbox.checked = false;
+    }
+});
+
+
+//Interação menu telas com resolução 1024px
 menuCategorias.addEventListener("mouseover", () => {
     subMenuCategorias.style.display = "block";
 });
