@@ -1,10 +1,30 @@
 async function listaProdutos() {
-    const conexao = await fetch ("http://localhost:3000/promocoes")
-    const conexaoConvertida = await conexao.json();
+    try {
+        const conexao = await fetch("http://localhost:3000/promocoes");
+        if (!conexao.ok) {
+            throw new Error('Ocorreu um erro inesperado na resposta da Rede');
+        }
+        const conexaoConvertida = await conexao.json();
+        return conexaoConvertida;
+    } catch (error) {
+        console.error("Falha ao buscar os resultados da pesquisa:", error);
+    }
+}
 
-    return conexaoConvertida;
+async function buscaProduto(termoDeBusca) {
+    try {
+        const conexao = await fetch(`http://localhost:3000/promocoes?q=${termoDeBusca}`);
+        if (!conexao.ok) {
+            throw new Error('Ocorreu um erro inesperado na resposta da Rede');
+        }
+        const conexaoConvertida = await conexao.json();
+        return conexaoConvertida;
+    } catch (error) {
+        console.error("Falha ao buscar os resultados da pesquisa:", error);
+    }
 }
 
 export const conectaApi = {
-    listaProdutos
-}
+    listaProdutos,
+    buscaProduto
+};
