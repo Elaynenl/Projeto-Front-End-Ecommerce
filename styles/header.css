@@ -370,9 +370,18 @@
         font-size: 16px;
         font-weight: 700;
     }
+
+    .opcoes__lista__promo {
+
+    }
     
     .opcoes__lista__titulo:hover, .opcoes__menu__link:hover, .opcoes__menu__subitem:hover {
         background-color: var(--cor-hover);
+    }
+
+    .opcoes__lista__promo {
+        text-decoration: none;
+        color: var(--preto);
     }
     .titulo__icone {
         display: block;

@@ -1,12 +1,17 @@
+.header__promocoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 .titulo__principal-promo {
     font-family: var(--fonte-card);
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     font-weight: 900;
     margin: 0.5em;
     color: var(--marron);
-    
 }
 
 .produtos__promo {
@@ -17,10 +22,12 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-     
+    margin-bottom: 1em;
+         
 }
 
 .container__produto-promo {
+    font-family: var(--fonte-lista-menu);
     list-style: none;
     border: 1px solid var(--preto);
     text-align: center;
@@ -29,7 +36,19 @@
     width: 49%;
     width: calc(50% - 1em); /* Ajuste para dois itens por linha */
     box-sizing: border-box;
+    height: 330px;
 }
+
+.titulo__produto__promo {
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    margin: 0.3em 0 0.8em 0
+}
+
+.valor__desconto__aplicado {
+    margin: 0.3em 0 0.8em 0
+} 
 
 .botao__comprar-produto {
     font-family: var(--fonte-lista-menu);
@@ -39,6 +58,7 @@
     border-radius: 2em;
     padding: 0.2em 0.5em;
     cursor: pointer;
+    margin-top: 1em;
 }
 
 .container__destaque__imagem {
@@ -49,7 +69,89 @@
     color: var(--vermelho-claro);
 }
 
+.campo__pesquisa__promo {
+    margin: 1em;
+}
+
+.pesquisar__input {
+    border-radius: 1em;
+    width: 300px;
+    padding: 0.5em;
+    margin: 1em;
+    background-color: transparent;
+    border: 1px solid var(--cor-cabecalho);
+    color: var(--marron);
+}
+
+.pesquisar__input::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--marron);
+    background: url("../img/lupa.png") no-repeat;
+    background-position: 0.5em; 
+    width: auto;
+    
+}
+
+
+.pesquisar__input:focus::placeholder {
+    color: transparent;
+    background: transparent;
+    
+}
+
+.pesquisar__botao {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--marron);
+    background: var(--cor-cabecalho);
+    border: 1px solid var(--marron);
+}
+
+.mensagem_titulo, .mensagem__erro {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin: auto;
+    margin-top: 4em;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    text-align: center;
+}
+
+ .botao__retornarParaProdutos {
+    /* align-self: baseline; */
+    display: none;
+    text-decoration: none;
+    font-family: var(--fonte-card);
+    font-size: 16px;
+    font-weight: 700;
+    /* text-align: center; */
+    margin: 1em 0 2em 1.2em;
+    padding-left: 0.9em;
+    color: var(--marron);
+    background-image: url(../img/retornar.png);
+    background-repeat: no-repeat;
+    background-position: left;
+} 
+
+
+
+
+
+
 @media screen and (min-width: 1024px) {
+
+    .titulo__principal-promo {
+        font-size: 28px;
+    }
+
+    .mensagem_titulo {
+        font-size: 18px;
+    }
 
     .produtos__promo {
         display: flex;
@@ -67,6 +169,10 @@
         width: 20%;
        
     }
+    
+    /* .titulo__produto {
+        font-size: 18px;
+    } */
 
 
 }
