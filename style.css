@@ -8,6 +8,7 @@
 @import url(styles/rodape.css);
 @import url(styles/busca.css);
 @import url(styles/promo.css);
+@import url(styles/formularioCadastroLogin.css);
 
 
 
@@ -16,12 +17,12 @@
     --cor-cabecalho: #c26a61;
     --cor-hover: #ca9089;
     /* --cor-cabecalho-projeto-inicial: #fa8072; */
+    --cor-form: #c09995;
     --preto: #000000;
     --pastel-gradiente: #5F0E0E;
     --cor-botao: #792926;
     --branco: #FFFFFF;
     --fonte-cabecalho: "labrada";
-    --branco: #FFFFFF;
     --vermelho-escuro: #8B0000;
     --vermelho-claro: #ff0000;
     --cinza: #858585;
@@ -31,9 +32,14 @@
     --cor-background-botao: #6bdca8;
     --cor-texto-botao-app: #00b864;
     --cor-hover-botao-app: #1bd37f;
+    --cor-hover-input-form: #ebe1e1;
+    --cor-botao-form: #dbc4b6;
+    --cor-hover-botao-form: #b9937b;
     --cor-link:#0000FF;
+    --cor-focus-form: #946f57;
     --fonte-lista-menu: 'Mulish';
     --fonte-card: 'Cabin-condensed';
+    --fonte-formulario: 'Inter';
     
 }
 

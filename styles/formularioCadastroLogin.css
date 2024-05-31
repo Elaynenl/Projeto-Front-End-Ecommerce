@@ -1,0 +1,233 @@
+.conteiner__formularios__login__cadastro {
+    font-family: var(--fonte-formulario);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--marron);
+    font-weight: 700;
+    
+}
+
+.container__formularios {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    background-color: var(--cor-form);
+    box-shadow: 5px 5px 10px #dbc4b6;
+}
+
+.conteudo__login {
+    width: 50%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid var(--marron);   
+}
+
+.form_conteudo__login {
+    border: 1px solid var(--preto); 
+    border-radius: 1em;
+    width: 300px;
+    height: 350px;
+    box-shadow: 3px 3px 6px #dbc4b6;   
+} 
+
+.login__titulo__cabecalho {
+    font-size: 20px;
+}
+
+.titulo__login {
+    color: var(--marron);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.3em 0;
+    text-align: center;
+}
+
+.container__campos__form {
+    padding: 1em;
+}
+
+.container__campos__form input {
+    width: 93%;
+    /* max-height: 100vh; */
+    padding: 0.8em ;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--branco); 
+    margin-bottom: 0.4em; 
+}
+
+
+.input__login__campo {
+    margin: 0.8em 0;
+}
+
+.redefinir__senha {
+    font-size: 12px;
+    margin: 0.4em;
+    font-weight: 400;
+}
+
+.input__login__campo label{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.lembrar {
+    display: flex;  
+    width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.lembrar input {
+    width: 16px;
+}
+
+.lembrar label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+.login__botao {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    margin: 2em;
+    border: none;
+    color: transparent;
+}
+
+.botao__logar {
+    font-family: var(--fonte-formulario);
+    background-color: var(--cor-botao-form);
+    color: var(--marron);
+    font-size: 14px;
+    padding: 0.5em 1em;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao__logar:hover,
+.botao__cadastro:hover {
+    background-color: var(--cor-hover-botao-form);
+}
+
+.formulario__cadastro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.titulo__cadastro {
+    margin-bottom: 3em;
+}
+
+.titulo__cadastro h2 {
+    font-size: 22px;
+    
+}
+
+.titulo__cadastro h2::after {
+    content: '';
+    display: block;
+    width: 5em;
+    height: 0.3em;
+    background-color: var(--cor-focus-form);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input__grupo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1em;
+}
+
+.input-box input {
+    margin: 0.6em 0;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #dbc4b6;
+}
+
+.input-box input:hover,
+.container__campos__form input:hover {
+    background-color: var(--cor-hover-input-form)
+}
+
+.input-box input:focus-visible,
+.container__campos__form input:focus-visible {
+    outline: 1px solid var(--cor-focus-form);
+}
+
+.input-box label,
+.genero__titulo h6 {
+    font-size: 14px;
+    color: var(--marron);
+}
+
+.input-box input::placeholder,
+.container__campos__form input::placeholder {
+    color: var(--preto);
+}
+
+.genero__grupo__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6em;
+    padding: 0 0.5em;
+}
+
+.genero__grupo {
+    display: flex;
+    align-items: center;
+}
+
+.genero__grupo input {
+    margin-right: 0.5em;
+}
+
+.genero__grupo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--marron);
+}
+
+.botao__cadastrar {
+    width: 30%;
+    margin: 1em auto;
+    text-align: center;
+    border: none;
+}
+
+.botao__cadastro {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: var(--marron);
+    font-family: var(--fonte-formulario);
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--cor-botao-form);
+    cursor: pointer;
+}
+
