@@ -1,60 +1,51 @@
 .conteiner__formularios__login__cadastro {
     font-family: var(--fonte-formulario);
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: var(--marron);
     font-weight: 700;
-    
+    box-sizing: border-box;
+    padding: 1em;    
 }
 
 .container__formularios {
-    width: 80%;
-    height: 80vh;
-    display: flex;
+    width: 100%;
+    height: min-content;
     background-color: var(--cor-form);
     box-shadow: 5px 5px 10px #dbc4b6;
 }
 
 .conteudo__login {
-    width: 50%;
-    display: flex;
     justify-content: center ;
     align-items: center;
-    flex-direction: column;
-    border-right: 1px solid var(--marron);   
+    padding: 0.5em 1em 2em 1em; 
 }
 
 .form_conteudo__login {
-    border: 1px solid var(--preto); 
+    border: 1px solid var(--marron);
     border-radius: 1em;
-    width: 300px;
-    height: 350px;
-    box-shadow: 3px 3px 6px #dbc4b6;   
-} 
+    padding: 0.5em;
+    box-shadow: 3px 3px 6px #dbc4b6; 
+}
 
 .login__titulo__cabecalho {
-    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .titulo__login {
     color: var(--marron);
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0.3em 0;
+    margin: 0.3em 0 0.5em 0;
     text-align: center;
-}
-
-.container__campos__form {
-    padding: 1em;
+    
 }
 
 .container__campos__form input {
-    width: 93%;
-    /* max-height: 100vh; */
+    width: 90%;
     padding: 0.8em ;
     border: none;
     border-radius: 10px;
@@ -62,15 +53,8 @@
     margin-bottom: 0.4em; 
 }
 
-
 .input__login__campo {
     margin: 0.8em 0;
-}
-
-.redefinir__senha {
-    font-size: 12px;
-    margin: 0.4em;
-    font-weight: 400;
 }
 
 .input__login__campo label{
@@ -94,13 +78,17 @@
     font-weight: 500;
 }
 
-
+.redefinir__senha {
+    font-size: 12px;
+    margin: 0.4em;
+    font-weight: 400;
+}
 
 .login__botao {
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-    margin: 2em;
+    margin: 0.5em;
     border: none;
     color: transparent;
 }
@@ -116,22 +104,21 @@
     cursor: pointer;
 }
 
-.botao__logar:hover,
-.botao__cadastro:hover {
-    background-color: var(--cor-hover-botao-form);
-}
-
 .formulario__cadastro {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2em;
+    padding: 0 1em; 
+}
+
+.cabecalho__formulario {
+    border: 0.1em dashed var(--marron);
+    padding: 0.5em;
 }
 
 .titulo__cadastro {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .titulo__cadastro h2 {
@@ -160,9 +147,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1em;
+    width: 90%;
 }
 
 .input-box input {
+    width: 100%;
     margin: 0.6em 0;
     padding: 0.8em 1.2em;
     border: none;
@@ -188,11 +177,10 @@
 
 .input-box input::placeholder,
 .container__campos__form input::placeholder {
-    color: var(--preto);
+    color: var(--marron);
 }
 
 .genero__grupo__inputs {
-    display: flex;
     justify-content: space-between;
     margin-top: 0.6em;
     padding: 0 0.5em;
@@ -208,7 +196,7 @@
 }
 
 .genero__grupo label {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
     color: var(--marron);
 }
@@ -229,5 +217,210 @@
     font-weight: 600;
     background-color: var(--cor-botao-form);
     cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .conteiner__formularios__login__cadastro {
+        height: 100vh;
+        align-items: center;
+        padding: 0;
+        
+    }
+
+    .container__formularios {
+        width: 80%;
+        height: 80vh;
+        display: flex;
+    }
+
+    .conteudo__login {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid var(--marron);
+        padding: 0;
+    }
+
+    .form_conteudo__login {
+        width: 300px;
+        height: 350px;
+        padding: 0;
+    } 
+
+    .login__titulo__cabecalho {
+        font-size: 20px;
+    }
+
+    .titulo__login {
+        font-size: 24px;
+        margin: 0.3em 0;
+    }
+
+    .container__campos__form {
+        padding: 1em;
+    }
+
+    .container__campos__form input {
+        width: 93%;
+    }
+
+
+    .input__login__campo label{
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    .lembrar input {
+        width: 16px;
+    }
+
+    .lembrar label {
+        font-size: 14px;
+        font-weight: 500;
+    } 
+
+    .botao__logar:hover,
+    .botao__cadastro:hover {
+        background-color: var(--cor-hover-botao-form);
+    }
+
+    .formulario__cadastro {
+        width: 50%;
+        padding: 2em;
+    }
+
+    .cabecalho__formulario {
+        border: none;
+        padding: 0;
+    }
+
+    .titulo__cadastro {
+        margin-bottom: 3em;
+    }
+
+    .titulo__cadastro h2 {
+        font-size: 22px;
+        
+    }
+
+    .input-box {
+        width: max-content;
+        margin-right: 1.2em;
+    }
+
+    .input-box input:hover,
+    .container__campos__form input:hover {
+        background-color: var(--cor-hover-input-form)
+    }
+
+    .input-box input:focus-visible,
+    .container__campos__form input:focus-visible {
+        outline: 1px solid var(--cor-focus-form);
+    }
+
+    .genero__grupo__inputs {
+        display: flex;
+    }
+
+    .genero__grupo label {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__campos__form {
+        padding: 1em 1em 0 1em;
+        display: block;
+    }
+
+    .login__titulo__cabecalho {
+        margin-bottom: 2em;
+    }
+
+    .titulo__login {
+        font-size: 28px;
+        margin-top: 1em;
+    }
+
+    .input__login__campo {
+        margin: 1.5em;
+    }
+
+    .lembrar {
+        margin-left: 1.5em;
+    }
+
+    .lembrar label,
+    .genero__grupo label {
+        font-size: 18px;
+    }
+
+
+
+    .input__grupo {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .input-box input {
+        width: 400px;
+        margin: 0.6em 0;
+        padding: 0.8em 1.2em;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px #dbc4b6;
+    }
+
+    .titulo__cadastro h2,
+    .login__titulo__cabecalho {
+        font-size: 28px;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+    }
+
+    .input-box label,
+    .genero__titulo h6,
+    .input__login__campo label {
+        font-size: 22px;
+        color: var(--marron);
+    }
+
+    .redefinir__senha {
+        font-size: 18px;
+       
+    }
+    
+    .form_conteudo__login {
+        width: 450px;
+        height: 450px;
+        padding: 0;
+    }
+    
+    .login__botao {
+        margin: 2em 0;
+    }
+
+    .botao__logar,
+    .botao__cadastro {
+        font-size: 20px;
+    }
+
+    .botao__cadastrar {
+        margin: 1.5em auto;
+    }
+
+    
+
+    
+    
 }
 
