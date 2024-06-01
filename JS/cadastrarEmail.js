@@ -22,6 +22,6 @@ formCadastrarEmail.addEventListener('submit', (evento) => {
     } else {
         alert('Por favor, insira um e-mail válido.')
     }
-
+    
 });
 
