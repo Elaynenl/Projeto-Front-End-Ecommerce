@@ -7,6 +7,7 @@
 }
 
 .contato__titulo {
+    text-align: center;
     font-size: 18px;
     font-weight: 800;
     color: var(--marron);
