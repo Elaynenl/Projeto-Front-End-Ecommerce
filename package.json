@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "<h1 align=\"center\"><img src=\"./img/logo_readme.png\"></h1>",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^1.0.0-alpha.23"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "json-server": "^1.0.0-alpha.23",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
 }
