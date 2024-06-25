@@ -9,9 +9,9 @@ export default function constroiCard(titulo__produto, imagem, valor_original, va
     produtoEmPromo.className = "container__produto-promo";
     produtoEmPromo.innerHTML = `<a href="" class="container__destaque__link"><img src="${imagem}" alt="imagem de um frasco de perfume masculino" class="container__destaque__imagem"></a>
     <h3 class="titulo__produto titulo__produto__promo">${titulo__produto}</h3>
-    <p class="valor"> <s>${valor_original}</s></p>
-    <p class="valor__desconto">${valor__desconto}</p>
-    <p class="valor__atual valor__desconto__aplicado">${valor__atual}</p>
+    <p class="valor"> <s>R$ ${valor_original}</s></p>
+    <p class="valor__desconto">${valor__desconto} % </p>
+    <p class="valor__atual valor__desconto__aplicado">R$ ${valor__atual}</p>
     <a href="" class="botao__comprar-produto">COMPRAR</a>`
 
     //classes dos itens da lista aproveitada do código da section Destaques, para ter o mesmo estilo

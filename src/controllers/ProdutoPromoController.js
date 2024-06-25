@@ -67,8 +67,21 @@ class ProdutoPromoController {
             res.status(500).json({message: `${erro.message} - falha na busca`})
         }
     }
+
+    static async listarProdutosPromoPorPalavraChave(req, res) {
+        const termoDeBusca = req.query.q;
+        try {
+            const produtosEncontrados = await produtoEmPromo.find({
+                $or: [
+                    { titulo__produto: { $regex: termoDeBusca, $options: 'i' } },
+                    { descricao: { $regex: termoDeBusca, $options: 'i' } }
+                ]
+            });
+            res.status(200).json(produtosEncontrados);
+        } catch (erro) {
+            res.status(500).json({ message: `${erro.message} - falha na busca por palavra-chave` });
+        }
+    }
 };
-
-
 
 export default ProdutoPromoController;
