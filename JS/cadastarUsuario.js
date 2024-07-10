@@ -1,94 +1,63 @@
 const formCadastrarUsuario = document.getElementById('formulario__cadastro__usuario');
-const usuariosCadastrados = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-formCadastrarUsuario.addEventListener('submit', (evento) => {
-        evento.preventDefault();
+formCadastrarUsuario.addEventListener('submit', async (evento) => {
+    evento.preventDefault();
 
-        const firstname = document.getElementById('firstname').value.trim();
-        const lastname = document.getElementById('lastname').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const number = document.getElementById('number').value.trim();
-        const password = document.getElementById('password').value.trim();
-        const confirmPassword = document.getElementById('Confirmpassword').value.trim();
-        const gender = document.querySelector('input[name="genero"]:checked').id;
-
-        if (password !== confirmPassword) {
-            alert('As senhas não coincidem!');
-            return;
-        }
-
-        if (firstname && lastname && email && number && password && confirmPassword && gender) {
-            alert('Cadastro realizado com sucesso!');
-
-            const usuario = {
-                firstname: firstname,
-                lastname: lastname,
-                email: email,
-                number: number,
-                password: password,
-                gender: gender
-            };
-
-            usuariosCadastrados.push(usuario);
-
-            localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
-
-            // Reseta o formulário
-            formCadastrarUsuario.reset();
-        } else {
-            alert('Por favor, preencha todos os campos.');
-        }
-    });
-
-
-
-
-
-
-
-
-
-
-// const formCadastroUsuario = document.getElementById('formulario__cadastro__usuario').value.trim();
-// let  nomeUsuario = document.getElementById('firstname').value.trim();
-// let  sobrenomeUsuario = document.getElementById('firstname').value.trim();
-// let  emailUsuario = document.getElementById('firstname').value.trim();
-// let  telefoneUsuario = document.getElementById('firstname').value.trim();
-// let  passwordUsuario = document.getElementById('firstname').value.trim();
-// let  confirmarSenhaUsuario = document.getElementById('firstname').value.trim();
-// let generoUsuário = document.querySelector('input[name="genero"]:checked') ? document.querySelector('input[name="genero"]:checked').id : '';
-
-
-// const usuariosCadastrados = JSON.parse(localStorage.getItem('usuarios')) || [];
-
-// formCadastroUsuario.addEventListener('submit', (evento) => {
-//     evento.preventDefault();
-
-//     let nomeValue = nomeUsuario.Value;
-//     let sobrenomeValue = sobrenomeUsuario.value
-//     let emailUsuarioValue = emailUsuario;
-
-//     if(nomeValue && sobrenomeValue && emailUsuarioValue) {
-//         alert("Cadastrado com Sucesso")
+    const firstname = document.getElementById('firstname').value.trim();
+    const lastname = document.getElementById('lastname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const number = document.getElementById('number').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const confirmPassword = document.getElementById('Confirmpassword').value.trim();
+    const gender = document.querySelector('input[name="genero"]:checked').id;
     
 
-//     let usuario = {
-//         nome: nomeValue,
-//         sobrenome: sobrenomeValue,
-//         emailUsuario: emailUsuarioValue
-//     }
+    if (password !== confirmPassword) {
+        alert('As senhas não coincidem!');
+        return;
+    }
 
-//     usuariosCadastrados.push(usuario)
+    if (firstname && lastname && email && number && password && confirmPassword && gender) {
+        const usuario = {
+            firstname: firstname,
+            lastname: lastname,
+            email: email,
+            number: number,
+            password: password,
+            gender: gender
+        };
 
-//     localStorage.setItem('usuarios,', JSON.stringify(usuariosCadastrados))
+        //conexão com a api usando o fetch
+        try {
+            const resposta = await fetch("http://localhost:3000/cadastro", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(usuario)
+            });
 
-//     nomeUsuario.value = '';
-//     sobrenomeUsuario = '';
-//     emailUsuario = '';
+            if (!resposta.ok) {
+                throw new Error('Falha ao cadastrar o usuário');
+            }
 
-//     } else {
-//         alert('Por favor, insira dados válidos.')
+            const respostaJson = await resposta.json();
 
-        
-//     }
-// })
+            alert('Cadastro realizado com sucesso!');
+
+            // Reseta o formulário após confirmação de cadastro ok.
+            formCadastrarUsuario.reset();
+
+        } catch (erro) {
+            console.error("Erro ao conectar com a API:", erro);
+            alert('Erro ao conectar com a API: ' + erro.message);
+        }
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
+});
+
+
+
+
+

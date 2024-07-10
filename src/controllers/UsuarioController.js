@@ -49,6 +49,31 @@ class UsuarioController {
         }
     };
 
+    static async loginUsuario(req, res) {
+        const { email, password } = req.body;
+    
+        try {
+            const usuarioEncontrado = await usuario.findOne({ email });
+    
+            if (usuarioEncontrado && usuarioEncontrado.password === password) {
+                // Retorna apenas os dados necessários para o front-end
+                const { firstname, gender } = usuarioEncontrado;
+                res.status(200).json({
+                    success: true,
+                    message: "Login realizado com sucesso!",
+                    usuario: {
+                        firstname: firstname,
+                        gender: gender
+                    }
+                });
+            } else {
+                res.status(401).json({ success: false, message: "Email ou senha incorretos." });
+            }
+        } catch (erro) {
+            res.status(500).json({ message: `${erro.message} - falha ao fazer login` });
+        }
+    }
+    
 }
 
 export default UsuarioController;

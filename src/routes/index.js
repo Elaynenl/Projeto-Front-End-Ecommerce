@@ -16,6 +16,18 @@ const routes = (app) => {
         res.status(200).sendFile(path.join(__dirname, "HTML/promo.html"));
     });
 
+    app.route("/cadastro-e-login").get((req, res) => {
+        res.status(200).sendFile(path.join(__dirname, "HTML/formularioCadastroLogin.html"));
+    });
+
+    app.route("/meu-perfil").get((req, res) => {
+        res.status(200).sendFile(path.join(__dirname, "HTML/paginaUsuario.html"));
+    });
+
+    
+
+
+
     app.use(express.static(__dirname));
     app.use('/HTML', express.static(path.join(__dirname, 'HTML')));
     app.use('/img', express.static(path.join(__dirname, 'img')));
