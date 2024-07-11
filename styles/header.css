@@ -371,9 +371,6 @@
         font-weight: 700;
     }
 
-    .opcoes__lista__promo {
-
-    }
     
     .opcoes__lista__titulo:hover, .opcoes__menu__link:hover, .opcoes__menu__subitem:hover {
         background-color: var(--cor-hover);
