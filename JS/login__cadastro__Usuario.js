@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
 
                 try {
-                    const resposta = await fetch("http://localhost:3000/login", {
+                    const resposta = await fetch("https://projeto-desenvolve.vercel.app/login", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"

@@ -29,7 +29,7 @@ formCadastrarUsuario.addEventListener('submit', async (evento) => {
 
         //conexão com a api usando o fetch
         try {
-            const resposta = await fetch("http://localhost:3000/cadastro", {
+            const resposta = await fetch("https://projeto-desenvolve.vercel.app/cadastro", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

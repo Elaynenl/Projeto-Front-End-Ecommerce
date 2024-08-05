@@ -1,6 +1,6 @@
 async function listaProdutos() {
     try {
-        const conexao = await fetch("http://localhost:3000/api/produtosEmPromocao");
+        const conexao = await fetch("https://projeto-desenvolve.vercel.app/api/produtosEmPromocao");
         if (!conexao.ok) {
             throw new Error('Ocorreu um erro inesperado na resposta da Rede');
         }
@@ -13,7 +13,7 @@ async function listaProdutos() {
 
 async function buscaProduto(termoDeBusca) {
     try {
-        const conexao = await fetch(`http://localhost:3000/api/produtosEmPromocao/busca?q=${termoDeBusca}`);
+        const conexao = await fetch(`https://projeto-desenvolve.vercel.app/api/produtosEmPromocao/busca?q=${termoDeBusca}`);
         if (!conexao.ok) {
             throw new Error('Ocorreu um erro inesperado na resposta da Rede');
         }
