@@ -13,6 +13,6 @@
     }
   ],
   "env": {
-    "API_BASE_URL": "https://projeto-desenvolve-iota.vercel.app"
+    "API_BASE_URL": "https://projeto-desenvolve.vercel.app"
   }
 }
