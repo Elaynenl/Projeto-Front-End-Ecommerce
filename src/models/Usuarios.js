@@ -7,7 +7,9 @@ const usuarioSchema = new mongoose.Schema({
     email: { type: String, required: true },
     number: { type: String, required: true },
     password: { type: String, required: true },
-    gender: { type: String, required: true, enum: ['feminino', 'masculino', 'outros', 'prefiro não dizer'] }
+    gender: { type: String, required: true, enum: ['feminino', 'masculino', 'outros', 'prefiro não dizer'] },
+    role: { type: String, enum: ['admin', 'user'], default: 'user' },
+    createdAt: { type: Date, default: new Date() },
 
 }, {versionKey: false}) //significa que não queremos versionar o nosso Schema.
 

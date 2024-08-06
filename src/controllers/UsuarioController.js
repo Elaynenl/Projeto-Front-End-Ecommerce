@@ -57,13 +57,14 @@ class UsuarioController {
     
             if (usuarioEncontrado && usuarioEncontrado.password === password) {
                 // Retorna apenas os dados necessários para o front-end
-                const { firstname, gender } = usuarioEncontrado;
+                const { firstname, gender, role } = usuarioEncontrado;
                 res.status(200).json({
                     success: true,
                     message: "Login realizado com sucesso!",
                     usuario: {
                         firstname: firstname,
-                        gender: gender
+                        gender: gender,
+                        role: role
                     }
                 });
             } else {
