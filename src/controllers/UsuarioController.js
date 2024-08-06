@@ -1,4 +1,5 @@
 import usuario from "../models/Usuarios.js";
+import { hashPassword, comparePassword } from "../utils/hashDeSenha.js";
 
 class UsuarioController {
     static async listarUsuarios (req, res) {
@@ -22,7 +23,9 @@ class UsuarioController {
 
     static async cadastrarUsuario (req, res) {
         try {
-            const novoUsuario = await usuario.create(req.body);
+            const { password, ...rest } = req.body; // Extrai a senha do corpo da requisição
+            const hashedPassword = await hashPassword(password); // Gera o hash da senha
+            const novoUsuario = await usuario.create({ ...rest, password: hashedPassword }); // Cria o novo usuário com a senha hasheada
             res.status(201).json({message: "Criado com sucesso", usuario: novoUsuario });
         } catch (erro) {
             res.status(500).json({ message: `${erro.message} - falha ao cadastrar usuário`});
@@ -32,7 +35,13 @@ class UsuarioController {
     static async atualizarCadastroUsuario (req, res) {
         try {
             const id = req.params.id;
-            await usuario.findByIdAndUpdate(id, req.body);
+            const { password, ...rest } = req.body;
+            if (password) {
+                const hashedPassword = await hashPassword(password);
+                await usuario.findByIdAndUpdate(id, { ...rest, password: hashedPassword });
+            } else {
+                await usuario.findByIdAndUpdate(id, rest);
+            }
             res.status(200).json({message: "Cadastro atualizado"});
         } catch(erro) {
             res.status(500).json({message: `${erro.message} - falha na atualização`})
@@ -55,8 +64,8 @@ class UsuarioController {
         try {
             const usuarioEncontrado = await usuario.findOne({ email });
     
-            if (usuarioEncontrado && usuarioEncontrado.password === password) {
-                // Retorna apenas os dados necessários para o front-end
+            if (usuarioEncontrado && await comparePassword(password, usuarioEncontrado.password)) {
+                // Retorna os dados necessários para o Front end
                 const { firstname, gender, role } = usuarioEncontrado;
                 res.status(200).json({
                     success: true,
