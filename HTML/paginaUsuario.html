@@ -7,10 +7,31 @@
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../JS/paginaUsuario.js" defer></script>
     <script src="../JS/loginUsuario.js" defer></script>
+    <script src="../JS/listarUsuarios.js" defer></script>
 </head>
 <body>
-    <div class="mensagem__boas__vindas">
-        <h1 class="titulo__pagina__usuario" id="mensagemBoasVindas"></h1>
+
+    <div class="cabecalho__usuario">
+
+        <div class="mensagem__boas__vindas">
+            <h1 class="titulo__pagina__usuario" id="mensagemBoasVindas"></h1>
+        </div>
+
+        <div class="botaoDeslogar" id="botaoDeslogar">
+            <a class="logout" id="logout" href=""><img class="botaoDeslogar" src="/img/logout.png" alt="icone de logout"></a>
+        </div>
+
     </div>
+
+    <ul class="listaUsuarios" id="listaUsuarios"></ul>
+
+    <div class="button" id="botaolistar">
+        <button>Listar Usuários</button>
+    </div>
+
+
+
+    
+
 </body>
 </html>

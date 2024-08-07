@@ -1,5 +1,55 @@
+.cabecalho__usuario {
+    padding: 0.5em;
+    align-items: center;
+    display: flex;
+}
+
 .titulo__pagina__usuario {
     font-family: var(--fonte-lista-menu);
     font-size: 20px;
     font-weight: 600;
 }
+
+.botaoDeslogar {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+}
+
+button {
+    font-family: var(--fonte-lista-menu);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--marron);
+    background-color: var(--cor-cabecalho);
+    border-radius: 0.3em;
+    margin: 1em;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .titulo__pagina__usuario {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .botaoDeslogar {
+        width: 28px;
+        height: 28px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .titulo__pagina__usuario {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .botaoDeslogar {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+    }
+}
+
