@@ -14,7 +14,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="./JS/interacaoMenus.js" defer></script>
-    <script src="./JS/cadastrarEmail.js" defer></script>
+    <script src="./JS/validaEmail.js" defer type="module"></script>
+    <script src="./JS/cadastrarEmailNewsletter.js" defer type="module"></script>
     <script src="./JS/campoPesquisa.js" defer></script>
     <script src="./JS/swipper.js" defer></script>
 
@@ -491,9 +492,10 @@
         <div class="contato__texto__container">
             <h2 class="contato__titulo">FIQUE POR DENTRO DAS NOVIDADES</h2>
             <p class="contato__texto">Estamos constantemente atualizando nossa linha de produtos, sempre buscando novas maneiras de aprimorar sua jornada de cuidados pessoais e bem-estar.</p>
-
+            
             <form class="formulario__email" id="emailForm">
                 <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" id="emailInput">
+                <p class="mensagemValidacao" id="mensagemValidacao">E-mail inválido</p>
                 <button type="submit" class="botao__cadastrar">Enviar</button>
             </form>
         </div>

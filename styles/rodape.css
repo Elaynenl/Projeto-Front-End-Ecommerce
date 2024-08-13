@@ -42,6 +42,10 @@
     padding: 0.9em;
 }
 
+.lista-menu__item:hover {
+    background-color: var(--cor-hover);
+}
+
 
 
 
