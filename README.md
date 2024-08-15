@@ -1,7 +1,9 @@
 <h1 align="center"><img src="./img/logo_readme.png"></h1>
 
 <p>Projeto desenvolvido durante a participação no programa Desenvolve Boticário 2024 em parceria com a escola Alura.<br>
-O desafio era construir do zero um  site responsivo completo para uma empresa do ramo de cosméticos, com foco na criação de um layout flexível que se adapte a dispositivos móveis e desktop.
+O desafio inicial era construir do zero um  site responsivo completo para uma empresa do ramo de cosméticos, com foco na criação de um layout flexível que se adapte a dispositivos móveis e desktop.
+O foco do segundo desafio era adicionar funcionalidades interativas com JavaScript, o que poderia incluir recursos como menu suspenso, carrossel de imagens, dentre outras interações.
+No terceiro e último desafio, o foco foi desenvolver para o projeto uma API REST com Node, Express, fazendo uso do banco de dados MongoBD para armazenamento de dados e conectá-la com o Front-End usando o Fetch.
 A empresa MV Cosméticos é uma empresa fictícia criada para a realização do projeto.</p>
 
 
@@ -12,6 +14,10 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
   <img align="center" heigth="43" width="48" alt="logo do CSS3" src="./img/logo_css.svg"/>
   <img align="center" heigth="30" width="43" alt="logo do photosho" src="./img/logo_photoshop.svg"/>
   <img align="center" heigth="30" width="36" alt="logo do figma" src="./img/logo_figma.svg"/>
+  <img align="center" heigth="30" width="40" alt="logo do figma" src="./img/nodejs.png"/>
+  <img align="center" heigth="30" width="40" alt="logo do figma" src="./img/logo_express.png"/>
+  <img align="center" heigth="30" width="40" alt="logo do figma" src="./img/logo_mongoDB.png"/>
+
 </div>
 
 <br>
@@ -108,17 +114,69 @@ A empresa MV Cosméticos é uma empresa fictícia criada para a realização do 
 
 <br>
 
+## Interatividade
+<br>
+
+<p>O projeto possui código JavaScript que confere interatividade à página, seja na resolução mobile ou em resoluções maiores. 
+<br>
+
+Interatividades:<br>
+
+- No mobile ao tocar no menu-hambúguer o menu aparece suspenso e ao tocar em qualquer região fora do menu, o menu é recolhido.
+
+- Nas demais resoluções, o menu é projetado para abrir automaticamente quando o cursor do mouse passa sobre ele e fechar quando é retirado, ou seja quando o cursor do mouse passa sobre o ítem do menu ele se expande para mostrar os submenus e ao retirar o cursor de cima, ele se recolhe ocultando as opções.
+
+- Em todas as resoluções, foi aplicado o efeito carrossel nas sessões "Mais Lançamentos" e "Destaques". O carrossel aplicado é "infinito", ou seja, reinicia sempre que chega à última imagem disponível na sessão.
+
+Menu Promoções:<br>
+
+No menu mobile o menu promoções é acessível através do Menu hambúguer, nas recoluções a partor de 1024px, é acessível através do menu Categorias e nas resoluções acima de 1728px o menu promoções faz parte dos menus principais da página.<br>
+
+Manipulação do DOM:<br>
+
+Ao acessar o menu Promoções, o DOM é manipulado com JavaScript para que os produtos em promoção sejam exibidos na tela. O código inicial utilizava HTML e usava a tag UL e LI para criar uma lista, porém foi refatorado para que essa manipulação ocorra usando JavaScript por meio do .innerHTML. <br>
+</p> <br>
+
+## Busca de produtos
+<br>
+
+Até o momento a busca por produtos foi adicionada apenas à página de Produtos em Promoção, acessível através do Menu Promoções cujo caminho de acesso foi citado acima. Ao acessar a página, diversos produtos (fictícios) serão mostrados na tela, bem como um campo de busca de produtos. Essa busca pode ser feita por palavra-chave completa ou até mesmo por parte de uma palavra. Ex: Perfume (as letras podem ser maíusculas ou minúsculas), ou "per". Para realizar a pesquisa o usuário pode fazer uso do botão "Pesquisar" ou do "Enter" no teclado. Ao retornar a busca o campo de pesquisa é limpo e um "botão" para retornar para "Todos os produtos" aparece na tela. Caso o produto pesquisado não esteja na lista, retorna um aviso informando que o produto não foi encontrado.<br>
+
+<img align="center" heigth="80" width="250"  alt="imagem de um tablet com o site da empresa MV Cosméticos" src="./img/tela_busca_produtos.png"> <img align="center" heigth="80" width="250"  alt="imagem de um tablet com o site da empresa MV Cosméticos" src="./img/tela_busca_produtos2.png.jpg">
+
+<br>
+
+## Cadastro e Login de Usuários <br>
+
+<p>O usuário pode realizar seu cadastro através do formulário que está acessível no menu hambúguer(mobile) e, nas demais resoluções, está acessível no ícone de usuário no canto superior direito da tela. O formulário (Frontend) se conecta com a API REST(Backend) através do Fetch ( função nativa do JavaScript que se realiza requisições assíncronas aos servidores) e salva os dados no MongoDB.<br>
+Na mesma página há a tela de login, onde o usuário usa o e-mail e senha cadastrados para a acessar o perfil de usuário. Ao realizar o login o usuário é direcionado para a página de boas vindas, onde há uma mensagem personalizada conforme o gênero sinalizado por ele ao se cadastrar.
+<br>
+
+## API REST <br>
+
+Foi desenvolvida uma API REST com algumas rotas, tanto para os produtos do menu Promoções, quanto para o Cadastro e Login de Usuários.<br>
+
+- A rota ( / ), serve a página principal do projeto;
+- A rota ( /produtosEmPromocao), serve o menu Promoções, e através dessa rota, os produtos cadastrados no MongoDB são retornados em tela, então o DOM é manipulado e cria os produtos com os estilos aplicados no código.
+- A rota (/cadastro-e-login) serve a página de Cadastro e Login de usuários.
+- A rota (/meu-perfil), serve a página de Boas Vindas.
+<br>
+
+<p>A API possui o CRUD (Create, Read, Update, Delete) completo, tanto para produtos como para usuários, porém ainda faltam algumas implementações a serem feitas, para que através do Front end seja possível testar todas as funcionalidades.<br>
+
+
+Todas as rotas foram testadas através do client de API Postman.</p>
+
+
 ## Status do projeto
 
 <img src="./img/engrenagens.png" width="35"> Em desenvolvimento <img src="./img/caixa_ferramentas.png"  width="35"> <br>
 
-<p>Apesar dos ícones serem clicávéis e possuir menu já determinado, campo de busca e cadastrao de e-mail... Ainda não faz o direcionamento específico.</p>
+<p>Ainda serão implementados testes, validações, autenticações e mais funcionalidades para aprimorar o que já foi desenvolvido até aqui</p>
 
 
 Acesse o projeto completo: <br>
-[GitHub Pages](https://elaynenl.github.io/Projeto-Front-End-Ecommerce/)
-<br>
-[Vercel](https://projeto-front-end-ecommerce.vercel.app/)
+[Vercel](https://projeto-desenvolve.vercel.app/)
 
 <br>
 
@@ -129,5 +187,3 @@ Acesse o projeto completo: <br>
 ## Licença
 
 <p>Projeto licenciado sob a licenca MIT.</p>
-
-
