@@ -22,9 +22,80 @@ button {
     font-weight: 600;
     color: var(--marron);
     background-color: var(--cor-cabecalho);
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     margin: 1em;
 }
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+.tabela__usuarios {
+    display: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    display: none; /* Oculta o cabeçalho da tabela em dispositivos móveis */
+}
+
+tbody, tr, td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid var(--marron);
+}
+
+tr {
+    margin-bottom: 10px;
+    border: none;
+}
+
+td {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    background-color: var(--branco);
+}
+
+td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%; /* Ajuste a largura do rótulo */
+    padding-left: 10px;
+    font-weight: bold;
+    background-color: var(--cor-hover);
+    color: var(--marron);
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+td {
+    padding-left: 50%; /* Ajusta o espaço para o conteúdo da célula não se sobrepor ao rótulo */
+    position: relative;
+}
+
+button {
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -37,6 +108,11 @@ button {
         width: 28px;
         height: 28px;
         margin-left: auto;
+    }
+
+    table {
+        width: 50%;
+        margin: 0 auto;
     }
 }
 

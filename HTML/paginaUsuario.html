@@ -12,26 +12,35 @@
 <body>
 
     <div class="cabecalho__usuario">
-
         <div class="mensagem__boas__vindas">
             <h1 class="titulo__pagina__usuario" id="mensagemBoasVindas"></h1>
         </div>
-
         <div class="botaoDeslogar" id="botaoDeslogar">
-            <a class="logout" id="logout" href=""><img class="botaoDeslogar" src="/img/logout.png" alt="icone de logout"></a>
+            <a class="logout" id="logout" href=""><img class="botaoDeslogar" src="/img/logout.png" alt="ícone de logout"></a>
         </div>
-
     </div>
-
-    <ul class="listaUsuarios" id="listaUsuarios"></ul>
 
     <div class="button" id="botaolistar">
         <button>Listar Usuários</button>
     </div>
 
-
-
-    
+    <table class="tabela__usuarios" id="tabelaUsuarios">
+        <thead class="campos__tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>E-mail</th>
+                <th>Contato</th>
+                <th>Gênero</th>
+                <th>Tipo</th>
+                <th>Data de Cadastro</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+            <!-- Usuários serão adicionados aqui -->
+        </tbody>
+    </table>
 
 </body>
 </html>
