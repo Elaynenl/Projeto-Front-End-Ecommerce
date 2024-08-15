@@ -5,12 +5,13 @@ formCadastrarUsuario.addEventListener('submit', async (evento) => {
 
     const firstname = document.getElementById('firstname').value.trim();
     const lastname = document.getElementById('lastname').value.trim();
-    const email = document.getElementById('email').value.trim();
+    const email = document.getElementById('email').value.trim().toLowerCase();
     const number = document.getElementById('number').value.trim();
     const password = document.getElementById('password').value.trim();
     const confirmPassword = document.getElementById('Confirmpassword').value.trim();
     const gender = document.querySelector('input[name="genero"]:checked').id;
-    
+
+        
 
     if (password !== confirmPassword) {
         alert('As senhas não coincidem!');
@@ -55,6 +56,8 @@ formCadastrarUsuario.addEventListener('submit', async (evento) => {
     } else {
         alert('Por favor, preencha todos os campos.');
     }
+
+    console.log(email);
 });
 
 
