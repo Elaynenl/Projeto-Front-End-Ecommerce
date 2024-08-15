@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mensagemBoasVindas = document.getElementById('mensagemBoasVindas');
     const usuarioLogadoString = localStorage.getItem('usuarioLogado');
+    const botaoLogout = document.getElementById('botaoDeslogar');
 
     if (usuarioLogadoString) {
         try {
@@ -19,4 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('Usuário não encontrado no localStorage.');
     }
+
+
+    botaoLogout.addEventListener('click', async  (evento) => {
+        evento.preventDefault();
+
+        if(botaoLogout) {
+            // Limpar as informações do usuário do localStorage
+            localStorage.removeItem('usuarioLogado');
+
+            window.location.href = '/'
+        }
+    })
+
+
 });
